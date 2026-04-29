@@ -1,5 +1,7 @@
 # ic-agent-flow Customer Releases
 
+[EN](./README.md) | [繁中](./README.zh-TW.md)
+
 這是 customer-facing release registry，不是開發 source repo。
 
 ## What is ic-agent-flow
