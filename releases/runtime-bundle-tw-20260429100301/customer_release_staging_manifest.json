@@ -1,0 +1,29 @@
+{
+  "schema_version": "customer-release-staging-manifest.v1",
+  "bundle_id": "runtime-bundle-tw-20260429100301",
+  "generated_at": "2026-04-29T02:03:03+00:00",
+  "variants": [
+    {
+      "variant": "enterprise_site",
+      "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/ic-agent-flow-enterprise-site-runtime-bundle-tw-20260429100301.tar.gz",
+      "manifest_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/enterprise_site.manifest.json",
+      "checksum_set_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/enterprise_site.checksums.json",
+      "staging_dir_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260429100301/enterprise_site"
+    },
+    {
+      "variant": "solo_eval",
+      "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/ic-agent-flow-solo-eval-runtime-bundle-tw-20260429100301.tar.gz",
+      "manifest_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/solo_eval.manifest.json",
+      "checksum_set_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/solo_eval.checksums.json",
+      "staging_dir_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260429100301/solo_eval"
+    },
+    {
+      "variant": "team_project",
+      "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/ic-agent-flow-team-project-runtime-bundle-tw-20260429100301.tar.gz",
+      "manifest_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/team_project.manifest.json",
+      "checksum_set_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/team_project.checksums.json",
+      "staging_dir_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260429100301/team_project"
+    }
+  ],
+  "copy_target_repo": "ic-agent-flow-customer-releases"
+}

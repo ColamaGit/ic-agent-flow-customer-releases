@@ -1,0 +1,21 @@
+{
+  "schema_version": "customer-package-release-manifest.v1",
+  "bundle_id": "runtime-bundle-tw-20260429100301",
+  "variant": "enterprise_site",
+  "package_profile": "enterprise_site",
+  "generated_at": "2026-04-29T02:03:02+00:00",
+  "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/ic-agent-flow-enterprise-site-runtime-bundle-tw-20260429100301.tar.gz",
+  "payload_sha256": "1c29205aee37915c7a958f1d41d219e87824ce734a2481bd8ecf8daefaa439c4",
+  "checksum_set_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/enterprise_site.checksums.json",
+  "installer_entrypoint_ref": "deployment/installers/install_runtime_bundle.py",
+  "docs_required": [
+    "README.md",
+    "deployment/docs/customer-package-operations-guide.v1.0.md",
+    "deployment/docs/EXTRACT_AND_INSTALL.md",
+    "deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+    "deployment/docs/OPENAI_SECRET_SETUP.md",
+    "deployment/docs/SUPPORT_EXPORT.md",
+    "deployment/docs/TROUBLESHOOTING.md"
+  ],
+  "runtime_environment_manifest_ref": "runtime/package_capabilities/runtime_environment_manifest.json"
+}

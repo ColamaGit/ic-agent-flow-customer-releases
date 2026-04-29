@@ -1,0 +1,11 @@
+{
+  "variant": "solo_eval",
+  "mode": "non_production",
+  "required_checks": [
+    "bundle_integrity_verified",
+    "eda_preflight_pass",
+    "secret_binding_verified",
+    "smoke_scenario_pass"
+  ],
+  "approval": "single_operator"
+}

@@ -1,0 +1,8 @@
+{
+  "bundle_id": "runtime-bundle-tw-20260429100301",
+  "variant": "solo_eval",
+  "generated_at": "2026-04-29T02:03:02+00:00",
+  "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/ic-agent-flow-solo-eval-runtime-bundle-tw-20260429100301.tar.gz",
+  "payload_sha256": "19202f93ea5966a9590895ddb284b6462d395b9f7d8b16d145bbab8fada80dc1",
+  "algorithm": "sha256"
+}

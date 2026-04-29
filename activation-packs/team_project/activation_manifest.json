@@ -1,0 +1,12 @@
+{
+  "variant": "team_project",
+  "mode": "team_governed",
+  "required_checks": [
+    "bundle_integrity_verified",
+    "eda_preflight_pass",
+    "secret_binding_verified",
+    "rbac_mapping_verified",
+    "smoke_scenario_pass"
+  ],
+  "approval": "operator_plus_reviewer"
+}

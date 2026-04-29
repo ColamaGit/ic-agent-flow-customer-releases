@@ -1,0 +1,14 @@
+{
+  "variant": "enterprise_site",
+  "mode": "enterprise_governed",
+  "required_checks": [
+    "bundle_integrity_verified",
+    "eda_preflight_pass",
+    "secret_binding_verified",
+    "rbac_mapping_verified",
+    "approval_quorum_verified",
+    "audit_readiness_verified",
+    "smoke_scenario_pass"
+  ],
+  "approval": "quorum_required"
+}

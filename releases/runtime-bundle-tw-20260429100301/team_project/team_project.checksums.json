@@ -1,0 +1,8 @@
+{
+  "bundle_id": "runtime-bundle-tw-20260429100301",
+  "variant": "team_project",
+  "generated_at": "2026-04-29T02:03:03+00:00",
+  "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260429100301/ic-agent-flow-team-project-runtime-bundle-tw-20260429100301.tar.gz",
+  "payload_sha256": "0eeb08fd5bfa3a2d7c077c77351768356a49c26c9dfa46d20422af2b1247318a",
+  "algorithm": "sha256"
+}
