@@ -1,18 +1,3 @@
-# ic-agent-flow Customer Package (enterprise_site)（zh-TW synced）
-
-> sync_mode: `canonical_mirror`
-> source_file: `releases/runtime-bundle-tw-20260429100301/enterprise_site/README.md`
-> source_sha256: `648e17da78fea5043c2257ef9b3c00e1b51bf9873f6679b8cf89b18a1e5e7baf`
-
-## 說明
-
-本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
-後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
-
----
-
-## Canonical Content (EN)
-
 # ic-agent-flow Customer Package (enterprise_site)
 
 Package ID: `runtime-bundle-tw-20260429100301-enterprise_site`
@@ -42,4 +27,3 @@ Package ID: `runtime-bundle-tw-20260429100301-enterprise_site`
 
 - runtime-bundle-tw-20260429100301: Current release bundle for `enterprise_site` profile
 - Previous bundles: check `customer_release_staging_manifest.json` lineage in release staging root
-

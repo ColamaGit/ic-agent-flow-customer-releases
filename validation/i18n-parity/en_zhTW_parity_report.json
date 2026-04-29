@@ -1,0 +1,525 @@
+{
+  "generated_at": "2026-04-29T15:48:22.055772",
+  "rule": "structure parity only (heading-level/table/link-target/bullet)",
+  "pair_count": 86,
+  "overall_verdict": "PASS",
+  "mismatch_count": 0,
+  "results": [
+    {
+      "file": "LICENSE.md",
+      "zh_file": "LICENSE.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "PACKAGE_VARIANTS.md",
+      "zh_file": "PACKAGE_VARIANTS.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "README.md",
+      "zh_file": "README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "RELEASE_INDEX.md",
+      "zh_file": "RELEASE_INDEX.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "SECURITY.md",
+      "zh_file": "SECURITY.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "SUPPORT.md",
+      "zh_file": "SUPPORT.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/enterprise_site/approval_quorum_checklist.md",
+      "zh_file": "activation-packs/enterprise_site/approval_quorum_checklist.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/enterprise_site/audit_readiness_checklist.md",
+      "zh_file": "activation-packs/enterprise_site/audit_readiness_checklist.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/enterprise_site/preflight_checklist.md",
+      "zh_file": "activation-packs/enterprise_site/preflight_checklist.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/enterprise_site/rbac_activation_checklist.md",
+      "zh_file": "activation-packs/enterprise_site/rbac_activation_checklist.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/enterprise_site/smoke_scenario.md",
+      "zh_file": "activation-packs/enterprise_site/smoke_scenario.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/solo_eval/preflight_checklist.md",
+      "zh_file": "activation-packs/solo_eval/preflight_checklist.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/solo_eval/smoke_scenario.md",
+      "zh_file": "activation-packs/solo_eval/smoke_scenario.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/team_project/preflight_checklist.md",
+      "zh_file": "activation-packs/team_project/preflight_checklist.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/team_project/rbac_activation_checklist.md",
+      "zh_file": "activation-packs/team_project/rbac_activation_checklist.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "activation-packs/team_project/smoke_scenario.md",
+      "zh_file": "activation-packs/team_project/smoke_scenario.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "briefings/01-capability-one-pager.md",
+      "zh_file": "briefings/01-capability-one-pager.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "briefings/02-package-variant-comparison.md",
+      "zh_file": "briefings/02-package-variant-comparison.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "briefings/03-activation-flow-summary.md",
+      "zh_file": "briefings/03-activation-flow-summary.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "briefings/04-release-and-ip-boundary-summary.md",
+      "zh_file": "briefings/04-release-and-ip-boundary-summary.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "briefings/README.md",
+      "zh_file": "briefings/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/audit-replay-guide.md",
+      "zh_file": "docs/audit-replay-guide.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/customer-activation-flow.md",
+      "zh_file": "docs/customer-activation-flow.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/eda-toolchain-binding-guide.md",
+      "zh_file": "docs/eda-toolchain-binding-guide.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/eda-toolchain-candidates-reference.md",
+      "zh_file": "docs/eda-toolchain-candidates-reference.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/extract-and-install.md",
+      "zh_file": "docs/extract-and-install.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/folder-structure.md",
+      "zh_file": "docs/folder-structure.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/getting-started.md",
+      "zh_file": "docs/getting-started.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/i18n-policy.md",
+      "zh_file": "docs/i18n-policy.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/ip-and-support-boundary.md",
+      "zh_file": "docs/ip-and-support-boundary.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/openai-backend-secret-setup.md",
+      "zh_file": "docs/openai-backend-secret-setup.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/package-selection-guide.md",
+      "zh_file": "docs/package-selection-guide.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/security-and-secrets.md",
+      "zh_file": "docs/security-and-secrets.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/support-bundle-export-guide.md",
+      "zh_file": "docs/support-bundle-export-guide.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/troubleshooting.md",
+      "zh_file": "docs/troubleshooting.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "docs/upgrade-rollback-guide.md",
+      "zh_file": "docs/upgrade-rollback-guide.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/CHANGELOG.md",
+      "zh_file": "releases/CHANGELOG.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/EDA_TOOLCHAIN_BINDING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/EXTRACT_AND_INSTALL.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/EXTRACT_AND_INSTALL.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/OPENAI_SECRET_SETUP.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/OPENAI_SECRET_SETUP.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/SUPPORT_EXPORT.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/SUPPORT_EXPORT.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/TROUBLESHOOTING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/TROUBLESHOOTING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/customer-package-operations-guide.v1.0.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/customer-package-operations-guide.v1.0.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/solo_eval/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/solo_eval/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/EDA_TOOLCHAIN_BINDING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/EXTRACT_AND_INSTALL.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/EXTRACT_AND_INSTALL.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/OPENAI_SECRET_SETUP.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/OPENAI_SECRET_SETUP.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/SUPPORT_EXPORT.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/SUPPORT_EXPORT.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/TROUBLESHOOTING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/TROUBLESHOOTING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/customer-package-operations-guide.v1.0.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/solo_eval/deployment/docs/customer-package-operations-guide.v1.0.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/team_project/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/team_project/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EDA_TOOLCHAIN_BINDING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EXTRACT_AND_INSTALL.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EXTRACT_AND_INSTALL.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/OPENAI_SECRET_SETUP.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/OPENAI_SECRET_SETUP.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/SUPPORT_EXPORT.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/SUPPORT_EXPORT.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/TROUBLESHOOTING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/TROUBLESHOOTING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/customer-package-operations-guide.v1.0.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/customer-package-operations-guide.v1.0.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/EDA_TOOLCHAIN_BINDING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/EXTRACT_AND_INSTALL.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/EXTRACT_AND_INSTALL.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/OPENAI_SECRET_SETUP.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/OPENAI_SECRET_SETUP.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/SUPPORT_EXPORT.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/SUPPORT_EXPORT.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/TROUBLESHOOTING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/TROUBLESHOOTING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/customer-package-operations-guide.v1.0.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/enterprise_site/deployment/docs/customer-package-operations-guide.v1.0.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/solo_eval/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/solo_eval/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/EDA_TOOLCHAIN_BINDING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/EXTRACT_AND_INSTALL.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/EXTRACT_AND_INSTALL.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/OPENAI_SECRET_SETUP.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/OPENAI_SECRET_SETUP.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/SUPPORT_EXPORT.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/SUPPORT_EXPORT.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/TROUBLESHOOTING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/TROUBLESHOOTING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/customer-package-operations-guide.v1.0.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/customer-package-operations-guide.v1.0.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/team_project/README.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/team_project/README.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/EDA_TOOLCHAIN_BINDING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/EXTRACT_AND_INSTALL.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/EXTRACT_AND_INSTALL.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/OPENAI_SECRET_SETUP.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/OPENAI_SECRET_SETUP.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/SUPPORT_EXPORT.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/SUPPORT_EXPORT.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/TROUBLESHOOTING.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/TROUBLESHOOTING.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/customer-package-operations-guide.v1.0.md",
+      "zh_file": "releases/runtime-bundle-tw-20260429140332/team_project/deployment/docs/customer-package-operations-guide.v1.0.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "trust/signature_verification.md",
+      "zh_file": "trust/signature_verification.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "validation/post-v1.6/enterprise_site/readiness_boundary_note.md",
+      "zh_file": "validation/post-v1.6/enterprise_site/readiness_boundary_note.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "validation/post-v1.6/enterprise_site/validation_plan.md",
+      "zh_file": "validation/post-v1.6/enterprise_site/validation_plan.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "validation/post-v1.6/solo_eval/validation_summary.md",
+      "zh_file": "validation/post-v1.6/solo_eval/validation_summary.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    },
+    {
+      "file": "validation/post-v1.6/team_project/validation_summary.md",
+      "zh_file": "validation/post-v1.6/team_project/validation_summary.zh-TW.md",
+      "verdict": "PASS",
+      "diff_fields": []
+    }
+  ]
+}

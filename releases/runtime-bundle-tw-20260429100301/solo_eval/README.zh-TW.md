@@ -1,18 +1,3 @@
-# ic-agent-flow Customer Package (solo_eval)（zh-TW synced）
-
-> sync_mode: `canonical_mirror`
-> source_file: `releases/runtime-bundle-tw-20260429100301/solo_eval/README.md`
-> source_sha256: `4938ed3a19562d2a1c4f396f28dfaf00a865f64088b5dd88d934b46c4e09840b`
-
-## 說明
-
-本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
-後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
-
----
-
-## Canonical Content (EN)
-
 # ic-agent-flow Customer Package (solo_eval)
 
 Package ID: `runtime-bundle-tw-20260429100301-solo_eval`
@@ -42,4 +27,3 @@ Package ID: `runtime-bundle-tw-20260429100301-solo_eval`
 
 - runtime-bundle-tw-20260429100301: Current release bundle for `solo_eval` profile
 - Previous bundles: check `customer_release_staging_manifest.json` lineage in release staging root
-

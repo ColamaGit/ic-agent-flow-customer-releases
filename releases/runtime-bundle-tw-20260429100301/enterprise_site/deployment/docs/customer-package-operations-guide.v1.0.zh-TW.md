@@ -1,18 +1,3 @@
-# Customer Package Operations Guide v1.0（zh-TW synced）
-
-> sync_mode: `canonical_mirror`
-> source_file: `releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/customer-package-operations-guide.v1.0.md`
-> source_sha256: `3a12981d28a3b4f543aacd56d928c38520d6f2e9097f69cb40f2d670ce3915fa`
-
-## 說明
-
-本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
-後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
-
----
-
-## Canonical Content (EN)
-
 # Customer Package Operations Guide v1.0
 
 ## Scope
@@ -141,4 +126,3 @@ Excluded from customer package by policy:
 - secret files (for example `.env`)
 
 Support/export outputs must remain redacted and bounded per policy.
-
