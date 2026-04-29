@@ -1,23 +1,22 @@
-# Security and Secrets（繁中導覽版）
+# Security and Secrets（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`docs/security-and-secrets.md`
+> sync_mode: `canonical_mirror`
+> source_file: `docs/security-and-secrets.md`
+> source_sha256: `c3ecb36f82b0a2a527fcab3cf1c4c14f59e614a5196c0ac9ef7cc4a7d0ad88cd`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`docs/security-and-secrets.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Security and Secrets`。
-- 詳細段落與技術細節請參照英文原文。
+# Security and Secrets
 
-## 同步狀態
+- secrets 不得進 package artifact。
+- `.env` / key 不得進 support bundle。
+- production 建議使用 secret manager（Vault/KMS/K8s Secret）。
+- log/support export 須 redaction。
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。

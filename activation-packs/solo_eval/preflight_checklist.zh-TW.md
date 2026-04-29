@@ -1,23 +1,22 @@
-# Solo Eval Preflight Checklist（繁中導覽版）
+# Solo Eval Preflight Checklist（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`activation-packs/solo_eval/preflight_checklist.md`
+> sync_mode: `canonical_mirror`
+> source_file: `activation-packs/solo_eval/preflight_checklist.md`
+> source_sha256: `5361e72970990d2b88f29556264ec3f9313fdf0795d9b27b9b468d86afdade0e`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`activation-packs/solo_eval/preflight_checklist.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Solo Eval Preflight Checklist`。
-- 詳細段落與技術細節請參照英文原文。
+# Solo Eval Preflight Checklist
 
-## 同步狀態
+- [ ] Bundle manifest/checksum verified
+- [ ] Local EDA tools resolvable
+- [ ] Backend secret reference valid
+- [ ] No forbidden files in runtime root
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。

@@ -1,23 +1,45 @@
-# ic-agent-flow Customer Package (enterprise_site)（繁中導覽版）
+# ic-agent-flow Customer Package (enterprise_site)（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`releases/runtime-bundle-tw-20260429140332/enterprise_site/README.md`
+> sync_mode: `canonical_mirror`
+> source_file: `releases/runtime-bundle-tw-20260429140332/enterprise_site/README.md`
+> source_sha256: `163b0a793c3eeaa4919217ddeaa511be26b8d521b0cc8a99229ef4493c2b472b`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`releases/runtime-bundle-tw-20260429140332/enterprise_site/README.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`ic-agent-flow Customer Package (enterprise_site)`。
-- 詳細段落與技術細節請參照英文原文。
+# ic-agent-flow Customer Package (enterprise_site)
 
-## 同步狀態
+Package ID: `runtime-bundle-tw-20260429140332-enterprise_site`
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+- Profile: `enterprise_site`
+- Allowed chips: `SN2025, UART, ASYNC_FIFO`
+- RBAC roles: `operator, reviewer, approver, auditor, security_owner, release_board, runtime_admin, support_owner`
+- Claim boundary: enterprise-site local governed operation with approval quorum
+
+## Capability Summary
+
+- PRD v1.0: requirement intake -> spec -> graph -> validation -> freeze -> plan gate consumption
+- PRD v0.9: governed EDA chain (V1/V2/V3 + H1/H2/H4/H3) with readiness artifacts
+- PRD v1.3: subject binding, decision package, re-entry and controlled release envelope
+- PRD v1.5/v1.6: customer package profile boundary, entitlement scope, controlled distribution/IP-safe surface
+
+## First Read
+
+- `deployment/docs/EXTRACT_AND_INSTALL.md`
+- `deployment/docs/OPENAI_SECRET_SETUP.md`
+- `deployment/docs/EDA_TOOLCHAIN_BINDING.md`
+- `deployment/docs/SUPPORT_EXPORT.md`
+- `deployment/docs/TROUBLESHOOTING.md`
+- `deployment/docs/customer-package-operations-guide.v1.0.md`
+
+## History Log
+
+- runtime-bundle-tw-20260429140332: Current release bundle for `enterprise_site` profile
+- Previous bundles: check `customer_release_staging_manifest.json` lineage in release staging root
+

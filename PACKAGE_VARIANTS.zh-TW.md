@@ -1,23 +1,29 @@
-# Package Variants（繁中導覽版）
+# Package Variants（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`PACKAGE_VARIANTS.md`
+> sync_mode: `canonical_mirror`
+> source_file: `PACKAGE_VARIANTS.md`
+> source_sha256: `04940b0b6cd65c2f7f594d6f6c8bf9d7fda0bfe5c709610b2ed2019657bc4ca8`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`PACKAGE_VARIANTS.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Package Variants`。
-- 詳細段落與技術細節請參照英文原文。
+# Package Variants
 
-## 同步狀態
+## `solo_eval`
+- 適用：單機評估
+- 邊界：non-production baseline
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+## `team_project`
+- 適用：小型團隊協作
+- 邊界：team-scope + RBAC baseline
+
+## `enterprise_site`
+- 適用：組織級部署
+- 邊界：enterprise governance + approval/audit baseline
+

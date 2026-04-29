@@ -1,5 +1,5 @@
 # Audit Replay Guide
 
-- 保留 bundle id、variant、run_id、timestamp、manifest/checksum 記錄。
-- 重放時必須使用同一 bundle 與相同 profile。
-- 差異判定以 gate/verdict/claim-boundary 為主，path/timestamp 可 normalize。
+- Preserve bundle id, variant, run id, timestamp, manifest/checksum.
+- Replay with the same bundle and profile.
+- Compare gate/verdict/claim-boundary first; normalize path/timestamp differences.

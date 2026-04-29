@@ -1,23 +1,39 @@
-# Release and IP Boundary Summary（繁中導覽版）
+# Release and IP Boundary Summary（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`briefings/04-release-and-ip-boundary-summary.md`
+> sync_mode: `canonical_mirror`
+> source_file: `briefings/04-release-and-ip-boundary-summary.md`
+> source_sha256: `86c0df1cabada8b8f1257c5516232d20aa674556d15c0b8ee4616d71ec1e4d09`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`briefings/04-release-and-ip-boundary-summary.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Release and IP Boundary Summary`。
-- 詳細段落與技術細節請參照英文原文。
+# Release and IP Boundary Summary
 
-## 同步狀態
+## Release Truth Model
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+- Payload 真值：`releases/runtime-bundle-tw-*`
+- 版本指標：`releases/version-pointers/*.json`（含 `LATEST.json`）
+- 對客入口：`README.md` + `RELEASE_INDEX.md` + `docs/` + `activation-packs/`
+
+## Not Included in Customer Release
+
+- `workspace/` internal governance truth
+- internal tests / QA goldens / internal closeout reasoning
+- prompt/context strategy
+- secret values (`.env`, API keys)
+
+## Support Export Boundary
+
+- support bundle 必須 dual-redaction（customer IP + vendor IP）
+- 禁止輸出 source tree 與 internal-only artifacts
+
+## Verification Command
+
+- `scripts/verify_release_bundle.sh <bundle_id>`
+

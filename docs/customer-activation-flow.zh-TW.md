@@ -1,23 +1,24 @@
-# Customer Activation Flow（繁中導覽版）
+# Customer Activation Flow（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`docs/customer-activation-flow.md`
+> sync_mode: `canonical_mirror`
+> source_file: `docs/customer-activation-flow.md`
+> source_sha256: `48e7af0ed821d2b4fa52bf4e1e4b0cb3c8fa9643ccef1e222e440ab21abe700e`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`docs/customer-activation-flow.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Customer Activation Flow`。
-- 詳細段落與技術細節請參照英文原文。
+# Customer Activation Flow
 
-## 同步狀態
+1. 選擇 variant 與 bundle。
+2. 完成 checksum/manifest 驗證。
+3. 完成 EDA toolchain binding 與 backend secret binding。
+4. 執行 preflight。
+5. 執行 smoke scenario。
+6. 產生 activation decision（PASS / PASS_WITH_WARNINGS / BLOCKED）。
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。

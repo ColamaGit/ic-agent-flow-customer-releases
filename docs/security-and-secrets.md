@@ -1,6 +1,6 @@
 # Security and Secrets
 
-- secrets 不得進 package artifact。
-- `.env` / key 不得進 support bundle。
-- production 建議使用 secret manager（Vault/KMS/K8s Secret）。
-- log/support export 須 redaction。
+- Secrets must not be packaged.
+- Secret values must not be exported in support bundles.
+- Use a secret manager for production environments.
+- Apply redaction to logs and exports.

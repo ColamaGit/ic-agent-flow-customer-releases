@@ -1,23 +1,37 @@
-# Activation Flow Summary（繁中導覽版）
+# Activation Flow Summary（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`briefings/03-activation-flow-summary.md`
+> sync_mode: `canonical_mirror`
+> source_file: `briefings/03-activation-flow-summary.md`
+> source_sha256: `c31a023f32460d54cc3d6e542d5f0dbfa447d1ac2e3ffcf817cfe1e7e0c410ec`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`briefings/03-activation-flow-summary.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Activation Flow Summary`。
-- 詳細段落與技術細節請參照英文原文。
+# Activation Flow Summary
 
-## 同步狀態
+## Baseline Flow
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+1. 選擇 bundle 與 variant（依 `RELEASE_INDEX.md` + pointers）
+2. 驗證 package 完整性（manifest/checksum/gate）
+3. 綁定 EDA toolchain 與 backend secret
+4. 執行 preflight
+5. 執行 smoke scenario
+6. 產生 activation decision（PASS / PASS_WITH_WARNINGS / BLOCKED）
+
+## Required References
+
+- `docs/extract-and-install.md`
+- `docs/eda-toolchain-binding-guide.md`
+- `docs/openai-backend-secret-setup.md`
+- `activation-packs/<variant>/*`
+
+## Fail-Closed Principle
+
+- 若完整性驗證、preflight、或 claim/evidence 對位失敗，必須 `BLOCKED`，不得繼續宣稱 ready。
+

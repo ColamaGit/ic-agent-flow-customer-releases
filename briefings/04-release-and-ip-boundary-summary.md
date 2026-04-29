@@ -2,22 +2,17 @@
 
 ## Release Truth Model
 
-- Payload 真值：`releases/runtime-bundle-tw-*`
-- 版本指標：`releases/version-pointers/*.json`（含 `LATEST.json`）
-- 對客入口：`README.md` + `RELEASE_INDEX.md` + `docs/` + `activation-packs/`
+- Payload truth: `releases/runtime-bundle-tw-*`
+- Version pointers: `releases/version-pointers/*.json`
+- Customer entrypoints: `README.md`, `RELEASE_INDEX.md`, `docs/`, `activation-packs/`
 
 ## Not Included in Customer Release
 
 - `workspace/` internal governance truth
-- internal tests / QA goldens / internal closeout reasoning
-- prompt/context strategy
-- secret values (`.env`, API keys)
+- internal tests/closeout reasoning
+- prompt/context internals
+- secret values
 
-## Support Export Boundary
+## Verification
 
-- support bundle 必須 dual-redaction（customer IP + vendor IP）
-- 禁止輸出 source tree 與 internal-only artifacts
-
-## Verification Command
-
-- `scripts/verify_release_bundle.sh <bundle_id>`
+Run `scripts/verify_release_bundle.sh <bundle_id>`.

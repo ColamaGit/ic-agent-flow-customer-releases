@@ -1,23 +1,53 @@
-# Extract and Install（繁中導覽版）
+# Extract and Install（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EXTRACT_AND_INSTALL.md`
+> sync_mode: `canonical_mirror`
+> source_file: `releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EXTRACT_AND_INSTALL.md`
+> source_sha256: `c1a626a3cfdda06ea80c93f2df7814010e0d88d7c81fde8367b6703c8396a141`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EXTRACT_AND_INSTALL.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Extract and Install`。
-- 詳細段落與技術細節請參照英文原文。
+# Extract and Install
 
-## 同步狀態
+## 1) Extract Package
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+```bash
+mkdir -p /tmp/ic-agent-flow-package
+tar -xzf <package-file>.tar.gz -C /tmp/ic-agent-flow-package
+cd /tmp/ic-agent-flow-package
+```
+
+## 2) Verify Structure
+
+Expected root:
+
+- `README.md`
+- `product/`
+- `deployment/`
+- `runtime/`
+- `templates/`
+
+## 3) Run Local Readiness Entry
+
+```bash
+python3 deployment/installers/run_customer_local_readiness.py \
+  --repo-root . \
+  --deployment-profile customer-vpc \
+  --chip-id test-chip-02 \
+  --task-id T-SN2025-PKG \
+  --chip-name SN2025 \
+  --rtl-function "Digital Controller" \
+  --rtl-src templates/baseline-digital-soc/rtl
+```
+
+For toolchain and secret setup, see:
+
+- `deployment/docs/EDA_TOOLCHAIN_BINDING.md`
+- `deployment/docs/OPENAI_SECRET_SETUP.md`
+

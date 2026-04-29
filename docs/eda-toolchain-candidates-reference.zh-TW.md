@@ -1,23 +1,47 @@
-# EDA Toolchain Candidates Reference（繁中導覽版）
+# EDA Toolchain Candidates Reference（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`docs/eda-toolchain-candidates-reference.md`
+> sync_mode: `canonical_mirror`
+> source_file: `docs/eda-toolchain-candidates-reference.md`
+> source_sha256: `c9c77d2db76e4976637a2487e0970f69aaff9ec85f815c742ea5528e0ec65c2a`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`docs/eda-toolchain-candidates-reference.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`EDA Toolchain Candidates Reference`。
-- 詳細段落與技術細節請參照英文原文。
+# EDA Toolchain Candidates Reference
 
-## 同步狀態
+此檔提供 `H0/H1/H2/H4/H3` 候選開源工具入口（快速導引給 AI/Human）。
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+## H0 (Lint / Simulation / CDC/RDC / LEC candidates)
+
+- Verilator (lint/sim): https://github.com/verilator/verilator
+- Yosys (LEC / synthesis base): https://github.com/YosysHQ/yosys
+- SymbiYosys (formal flow helper): https://github.com/YosysHQ/sby
+
+## H1 (Synthesis)
+
+- Yosys: https://github.com/YosysHQ/yosys
+
+## H2 (P&R)
+
+- OpenROAD: https://github.com/The-OpenROAD-Project/OpenROAD
+
+## H4 (DRC / Layout check)
+
+- KLayout: https://github.com/KLayout/klayout
+
+## H3 (LVS)
+
+- Netgen: https://github.com/RTimothyEdwards/netgen
+
+## Related PDK / collateral ecosystem
+
+- OpenLane: https://github.com/The-OpenROAD-Project/OpenLane
+- OpenPDKs: https://github.com/RTimothyEdwards/open_pdks
+- SkyWater SKY130 PDK docs: https://skywater-pdk.readthedocs.io/
+

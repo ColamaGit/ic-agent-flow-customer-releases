@@ -1,23 +1,39 @@
-# Troubleshooting（繁中導覽版）
+# Troubleshooting（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/TROUBLESHOOTING.md`
+> sync_mode: `canonical_mirror`
+> source_file: `releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/TROUBLESHOOTING.md`
+> source_sha256: `c78bc73a0168572071f9dc69793849e46059adcfcff05aa8d0996487b930a378`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`releases/runtime-bundle-tw-20260429140332/solo_eval/deployment/docs/TROUBLESHOOTING.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Troubleshooting`。
-- 詳細段落與技術細節請參照英文原文。
+# Troubleshooting
 
-## 同步狀態
+## Common Failures
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+1. `rtl source not found`
+   - check `--rtl-src` path
+   - ensure `templates/` exists at package root
+
+2. EDA tool not found
+   - set tool overrides via `--override key=value`
+   - verify executable path and permissions
+
+3. OpenAI route blocked
+   - verify `OPENAI_API_KEY` is set in current shell
+   - verify network policy allows backend route for selected profile
+
+4. readiness artifacts missing
+   - verify run command exit code
+   - inspect `artifacts/production-runs/<chip>/<task>/<timestamp>/`
+
+## Escalation Rule
+
+If failure persists after path/env verification, capture command + stderr + run directory and escalate with bounded support bundle.
+

@@ -1,23 +1,27 @@
-# Security（繁中導覽版）
+# Security（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`SECURITY.md`
+> sync_mode: `canonical_mirror`
+> source_file: `SECURITY.md`
+> source_sha256: `4104ef333e38927853b94a1775ad260d96e7b7f95480a0aaa08fc56f6c80c003`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`SECURITY.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Security`。
-- 詳細段落與技術細節請參照英文原文。
+# Security
 
-## 同步狀態
+## Boundaries
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+- 此 repo 僅交付 customer-facing release payload。
+- 不得包含：`workspace/`、`tests/`、`.env`、internal PRD/closeout、prompt/context strategy。
+
+## Verification
+
+- 先驗證 checksums/manifests。
+- 建議執行：`scripts/verify_release_bundle.sh <bundle_id>`。
+

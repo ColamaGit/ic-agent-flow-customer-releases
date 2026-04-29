@@ -1,23 +1,22 @@
-# Enterprise Site Approval Quorum Checklist（繁中導覽版）
+# Enterprise Site Approval Quorum Checklist（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`activation-packs/enterprise_site/approval_quorum_checklist.md`
+> sync_mode: `canonical_mirror`
+> source_file: `activation-packs/enterprise_site/approval_quorum_checklist.md`
+> source_sha256: `4bde7db3506d1aae95f3055b3a28709af46b62fdf68651d9fe3fd0265910a04c`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`activation-packs/enterprise_site/approval_quorum_checklist.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Enterprise Site Approval Quorum Checklist`。
-- 詳細段落與技術細節請參照英文原文。
+# Enterprise Site Approval Quorum Checklist
 
-## 同步狀態
+- [ ] Required approvers list defined
+- [ ] Quorum threshold configured
+- [ ] Conflict-of-interest rule acknowledged
+- [ ] Approval record retention policy confirmed
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。

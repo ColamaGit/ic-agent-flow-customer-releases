@@ -2,10 +2,10 @@
 
 ## Boundaries
 
-- 此 repo 僅交付 customer-facing release payload。
-- 不得包含：`workspace/`、`tests/`、`.env`、internal PRD/closeout、prompt/context strategy。
+- This repository is customer-facing distribution surface only.
+- Forbidden content includes `workspace/`, `tests/`, `.env`, internal PRD/closeout reasoning, and prompt/context internals.
 
 ## Verification
 
-- 先驗證 checksums/manifests。
-- 建議執行：`scripts/verify_release_bundle.sh <bundle_id>`。
+- Verify checksums and manifests before use.
+- Run: `scripts/verify_release_bundle.sh <bundle_id>`.

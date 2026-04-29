@@ -1,23 +1,46 @@
-# OpenAI Secret Setup（繁中導覽版）
+# OpenAI Secret Setup（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/OPENAI_SECRET_SETUP.md`
+> sync_mode: `canonical_mirror`
+> source_file: `releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/OPENAI_SECRET_SETUP.md`
+> source_sha256: `881b09c8e40b9c9625cc0e5d9a4aef263e57da1af7c493a03f6c56f87433b121`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`releases/runtime-bundle-tw-20260429100301/enterprise_site/deployment/docs/OPENAI_SECRET_SETUP.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`OpenAI Secret Setup`。
-- 詳細段落與技術細節請參照英文原文。
+# OpenAI Secret Setup
 
-## 同步狀態
+## Required Variables
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+- `OPENAI_API_KEY`
+
+Optional:
+
+- `OPENAI_MODEL`
+
+## Session-Scoped Setup
+
+```bash
+export OPENAI_API_KEY="<your-key>"
+export OPENAI_MODEL="gpt-5.4"
+```
+
+## `.env` File Setup (Package Root)
+
+```bash
+set -a
+source .env
+set +a
+```
+
+## Secret Safety Rules
+
+- Do not commit `.env`.
+- Do not place key values in config files tracked by git.
+- Do not emit key values into logs/reports/support bundles.
+

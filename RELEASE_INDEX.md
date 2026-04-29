@@ -1,6 +1,6 @@
 # Release Index
 
-此檔為 customer release 查找入口。`bundle_id` 採 `Asia/Taipei (UTC+8)` 命名。
+Customer-facing release discovery table. `bundle_id` uses `Asia/Taipei (UTC+8)`.
 
 | version | bundle_id | release_date (UTC+8) | variants | checksum | manifest | changelog_ref | status |
 |---|---|---|---|---|---|---|---|
@@ -9,4 +9,5 @@
 ## Mapping
 
 - Semantic version pointer: `releases/version-pointers/v1.6.0.json`
+- Latest pointer: `releases/version-pointers/LATEST.json`
 - One-copy payload root: `releases/runtime-bundle-tw-20260429140332/`

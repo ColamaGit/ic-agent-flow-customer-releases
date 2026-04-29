@@ -1,5 +1,5 @@
 # Solo Eval Smoke Scenario
 
-1. 啟動最小 flow（單 chip）。
-2. 產生 run record 與 readiness report。
-3. 確認 gate 結果可讀且無 fail-closed blocker。
+1. Run minimal single-chip flow.
+2. Generate run record and readiness report.
+3. Confirm gate output is readable and fail-closed blockers are absent.

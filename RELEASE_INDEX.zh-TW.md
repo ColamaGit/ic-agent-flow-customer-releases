@@ -1,23 +1,28 @@
-# Release Index（繁中導覽版）
+# Release Index（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`RELEASE_INDEX.md`
+> sync_mode: `canonical_mirror`
+> source_file: `RELEASE_INDEX.md`
+> source_sha256: `f2f7c691501bdb08949ab84f1901e6e2b2c07cc93d34ba21570fdc26851adf5f`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`RELEASE_INDEX.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`Release Index`。
-- 詳細段落與技術細節請參照英文原文。
+# Release Index
 
-## 同步狀態
+此檔為 customer release 查找入口。`bundle_id` 採 `Asia/Taipei (UTC+8)` 命名。
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+| version | bundle_id | release_date (UTC+8) | variants | checksum | manifest | changelog_ref | status |
+|---|---|---|---|---|---|---|---|
+| v1.6.0 | runtime-bundle-tw-20260429140332 | 2026-04-29 | solo_eval / team_project / enterprise_site | `releases/runtime-bundle-tw-20260429140332/*/*.checksums.json` | `releases/runtime-bundle-tw-20260429140332/customer_release_staging_manifest.json` | `releases/CHANGELOG.md` | ACTIVE |
+
+## Mapping
+
+- Semantic version pointer: `releases/version-pointers/v1.6.0.json`
+- One-copy payload root: `releases/runtime-bundle-tw-20260429140332/`
+

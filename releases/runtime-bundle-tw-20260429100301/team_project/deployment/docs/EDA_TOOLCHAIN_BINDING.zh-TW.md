@@ -1,23 +1,52 @@
-# EDA Toolchain Binding（繁中導覽版）
+# EDA Toolchain Binding（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EDA_TOOLCHAIN_BINDING.md`
+> sync_mode: `canonical_mirror`
+> source_file: `releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EDA_TOOLCHAIN_BINDING.md`
+> source_sha256: `f92479ac35f65dfce66bffc82a51f0414d04e2aebaf5d865f96575c9dc6c9dae`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`releases/runtime-bundle-tw-20260429100301/team_project/deployment/docs/EDA_TOOLCHAIN_BINDING.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`EDA Toolchain Binding`。
-- 詳細段落與技術細節請參照英文原文。
+# EDA Toolchain Binding
 
-## 同步狀態
+Runtime tool resolution is host-bound and can be overridden per run.
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
+## Supported Override Keys
+
+- `verilator_bin`
+- `yosys_bin`
+- `openroad_bin`
+- `netgen_bin`
+- `klayout_python_bin`
+- `nangate45_root`
+- `nangate45_lib_path`
+- `nangate45_tech_lef_path`
+- `nangate45_stdcell_lef_path`
+- `nangate45_tracks_path`
+
+## Example
+
+```bash
+python3 deployment/installers/run_customer_local_readiness.py \
+  --repo-root . \
+  --deployment-profile customer-vpc \
+  --chip-id test-chip-02 \
+  --task-id T-SN2025-PKG \
+  --chip-name SN2025 \
+  --rtl-function "Digital Controller" \
+  --rtl-src templates/baseline-digital-soc/rtl \
+  --override yosys_bin=/usr/local/bin/yosys \
+  --override openroad_bin=/Users/imac/eda/openroad-cxx17/build-clang/bin/openroad
+```
+
+## Operational Rule
+
+Package delivers runtime/templates/contracts only.
+Customer site binds actual tool locations during activation.
+

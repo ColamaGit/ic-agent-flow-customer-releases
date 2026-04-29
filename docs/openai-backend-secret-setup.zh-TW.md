@@ -1,23 +1,22 @@
-# OpenAI / Backend Secret Setup（繁中導覽版）
+# OpenAI / Backend Secret Setup（zh-TW synced）
 
-> 語言：`zh-TW`
-> 對應英文原文：`docs/openai-backend-secret-setup.md`
+> sync_mode: `canonical_mirror`
+> source_file: `docs/openai-backend-secret-setup.md`
+> source_sha256: `38487d5a049bd40a6f04eb92d4bbab1cd27662c0fe18a658d257623b3893376d`
 
-本檔為繁中導覽版（i18n fallback）。
+## 說明
 
-## 使用方式
+本檔與英文版同步鎖定。為避免 EN/zh-TW 漂移，先以 canonical mirror 方式確保資訊一致。
+後續若要提供完整繁中翻譯，必須在更新後重算 `source_sha256`。
 
-1. 先閱讀本檔的繁中摘要。
-2. 若需逐段完整原文與命令範例，請查看英文版：`docs/openai-backend-secret-setup.md`。
-3. 若繁中與英文內容不一致，以英文版為暫時 canonical，並在後續版本同步修正。
+---
 
-## 繁中摘要
+## Canonical Content (EN)
 
-- 本文件目前已納入 EN / zh-TW i18n 覆蓋。
-- 內容主題：`OpenAI / Backend Secret Setup`。
-- 詳細段落與技術細節請參照英文原文。
+# OpenAI / Backend Secret Setup
 
-## 同步狀態
+1. 在 customer site 設定 secret（不寫入 repo）。
+2. 僅提供 secret reference 給 runtime。
+3. 驗證 log/support bundle 不含 secret value。
+4. `airgap_local` profile 禁止 remote backend routing。
 
-- i18n 狀態：`fallback_ready`
-- 後續目標：逐步升級為完整繁中對譯版本（non-fallback）。
