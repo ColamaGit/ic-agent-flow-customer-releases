@@ -8,5 +8,6 @@ This folder is the guest/client/customer reading entrypoint (not runtime executi
 2. [02-package-variant-comparison.md](./02-package-variant-comparison.md)
 3. [03-activation-flow-summary.md](./03-activation-flow-summary.md)
 4. [04-release-and-ip-boundary-summary.md](./04-release-and-ip-boundary-summary.md)
+5. [ic-agent-flow-whitepaper-outline.md](./ic-agent-flow-whitepaper-outline.md)
 
 This customer repository must not depend on private source-repo URLs.
