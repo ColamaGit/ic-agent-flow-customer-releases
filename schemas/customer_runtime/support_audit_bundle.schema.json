@@ -1,1 +1,21 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/customer_runtime/support_audit_bundle.schema.json",
+  "title": "Support Audit Bundle",
+  "type": "object",
+  "required": ["bundle_id", "variant", "redaction_policy"],
+  "properties": {
+    "bundle_id": { "type": "string" },
+    "variant": { "type": "string" },
+    "redaction_policy": {
+      "type": "object",
+      "required": ["customer_ip_redaction", "vendor_ip_redaction"],
+      "properties": {
+        "customer_ip_redaction": { "type": "boolean" },
+        "vendor_ip_redaction": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

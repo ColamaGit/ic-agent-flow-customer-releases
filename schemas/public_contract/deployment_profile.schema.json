@@ -1,1 +1,16 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/public_contract/deployment_profile.schema.json",
+  "title": "Deployment Profile",
+  "type": "object",
+  "required": ["profile_id", "mode"],
+  "properties": {
+    "profile_id": { "type": "string" },
+    "mode": { "type": "string" },
+    "allowed_chips": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,1 +1,17 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/public_contract/release_manifest.schema.json",
+  "title": "Release Manifest",
+  "type": "object",
+  "required": ["bundle_id", "variants"],
+  "properties": {
+    "bundle_id": { "type": "string" },
+    "variants": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "created_at": { "type": "string" }
+  },
+  "additionalProperties": true
+}

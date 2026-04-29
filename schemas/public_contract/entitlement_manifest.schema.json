@@ -1,1 +1,19 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/public_contract/entitlement_manifest.schema.json",
+  "title": "Entitlement Manifest",
+  "type": "object",
+  "required": ["variant", "allowed_chips"],
+  "properties": {
+    "variant": { "type": "string" },
+    "allowed_chips": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forbidden_capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

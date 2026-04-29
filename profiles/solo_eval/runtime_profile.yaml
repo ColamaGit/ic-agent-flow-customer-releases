@@ -1,1 +1,10 @@
-# TODO: define content
+profile_id: solo_eval
+mode: non_production
+allowed_chips:
+  - SN2025
+eda:
+  preflight_required: true
+backend:
+  remote_allowed: true
+support:
+  export_redaction: required

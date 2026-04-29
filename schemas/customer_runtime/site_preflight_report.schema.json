@@ -1,1 +1,17 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/customer_runtime/site_preflight_report.schema.json",
+  "title": "Site Preflight Report",
+  "type": "object",
+  "required": ["bundle_id", "variant", "verdict"],
+  "properties": {
+    "bundle_id": { "type": "string" },
+    "variant": { "type": "string" },
+    "verdict": { "type": "string" },
+    "checks": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,1 +1,14 @@
-# TODO: define content
+profile_id: enterprise_site
+mode: enterprise_governed
+allowed_chips:
+  - SN2025
+  - UART
+  - ASYNC_FIFO
+eda:
+  preflight_required: true
+backend:
+  remote_allowed: conditional
+rbac:
+  required: true
+approval_quorum:
+  required: true

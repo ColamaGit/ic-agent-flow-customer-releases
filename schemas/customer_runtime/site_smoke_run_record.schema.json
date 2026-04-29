@@ -1,1 +1,18 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/customer_runtime/site_smoke_run_record.schema.json",
+  "title": "Site Smoke Run Record",
+  "type": "object",
+  "required": ["bundle_id", "variant", "run_id", "verdict"],
+  "properties": {
+    "bundle_id": { "type": "string" },
+    "variant": { "type": "string" },
+    "run_id": { "type": "string" },
+    "verdict": { "type": "string" },
+    "artifacts": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

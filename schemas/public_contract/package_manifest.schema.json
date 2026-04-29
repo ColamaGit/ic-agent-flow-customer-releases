@@ -1,1 +1,14 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/public_contract/package_manifest.schema.json",
+  "title": "Package Manifest",
+  "type": "object",
+  "required": ["variant", "bundle_id", "package_file"],
+  "properties": {
+    "variant": { "type": "string" },
+    "bundle_id": { "type": "string" },
+    "package_file": { "type": "string" },
+    "checksums": { "type": "object" }
+  },
+  "additionalProperties": true
+}

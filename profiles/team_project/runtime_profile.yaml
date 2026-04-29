@@ -1,1 +1,11 @@
-# TODO: define content
+profile_id: team_project
+mode: team_governed
+allowed_chips:
+  - SN2025
+  - UART
+eda:
+  preflight_required: true
+backend:
+  remote_allowed: true
+rbac:
+  required: true

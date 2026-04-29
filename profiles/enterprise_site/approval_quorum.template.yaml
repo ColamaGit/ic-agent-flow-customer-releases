@@ -1,1 +1,6 @@
-# TODO: define content
+approval_quorum:
+  min_approvers: 2
+  required_roles:
+    - approver
+    - reviewer
+  conflict_of_interest_forbidden: true

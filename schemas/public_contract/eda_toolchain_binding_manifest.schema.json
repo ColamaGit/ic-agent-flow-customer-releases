@@ -1,1 +1,24 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/public_contract/eda_toolchain_binding_manifest.schema.json",
+  "title": "EDA Toolchain Binding Manifest",
+  "type": "object",
+  "required": ["toolchains"],
+  "properties": {
+    "toolchains": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "tool_type", "executable"],
+        "properties": {
+          "id": { "type": "string" },
+          "tool_type": { "type": "string" },
+          "executable": { "type": "string" },
+          "version_command": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

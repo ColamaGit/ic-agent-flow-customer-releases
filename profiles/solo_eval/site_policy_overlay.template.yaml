@@ -1,1 +1,6 @@
-# TODO: define content
+policy_overlay:
+  change_ticket: CHG-REQUIRED
+  logging_level: info
+  forbidden_capabilities:
+    - source_export
+    - internal_workspace_access

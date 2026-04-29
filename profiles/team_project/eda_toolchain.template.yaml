@@ -1,1 +1,13 @@
-# TODO: define content
+toolchains:
+  - id: yosys_local
+    tool_type: synthesis
+    executable: /usr/local/bin/yosys
+    version_command: "yosys -V"
+  - id: openroad_local
+    tool_type: place_route
+    executable: /usr/local/bin/openroad
+    version_command: "openroad -version"
+  - id: netgen_local
+    tool_type: lvs
+    executable: /usr/local/bin/netgen
+    version_command: "netgen -batch"

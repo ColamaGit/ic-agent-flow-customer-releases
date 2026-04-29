@@ -1,0 +1,30 @@
+{
+  "schema_version": "runtime-environment-manifest.v1",
+  "python_runtime": {
+    "required_version": ">=3.13",
+    "entrypoints": [
+      "deployment/installers/run_governed_readiness_entry.py",
+      "runtime/scripts/governance_pipeline_runner.py",
+      "runtime/scripts/run_requirement_intake.py"
+    ]
+  },
+  "node_runtime": {
+    "required": false,
+    "note": "Node.js is optional for customer runtime path unless explicit console workflows are enabled."
+  },
+  "eda_toolchain": {
+    "required_binaries": [
+      "verilator",
+      "yosys",
+      "openroad",
+      "netgen",
+      "klayout_python"
+    ],
+    "binding_contract_ref": "deployment/docs/EDA_TOOLCHAIN_BINDING.md"
+  },
+  "preflight_commands": [
+    "python3 deployment/installers/healthcheck_runtime_install.py --repo-root .",
+    "python3 deployment/installers/run_governed_readiness_entry.py --help"
+  ],
+  "customer_runtime_contract_note": "This manifest is the customer-facing runtime dependency contract. Do not treat repo root package.json as the customer runtime contract."
+}

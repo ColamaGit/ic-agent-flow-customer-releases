@@ -1,1 +1,14 @@
-{}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://icaf.local/schemas/customer_runtime/site_activation_request.schema.json",
+  "title": "Site Activation Request",
+  "type": "object",
+  "required": ["bundle_id", "variant", "profile_id"],
+  "properties": {
+    "bundle_id": { "type": "string" },
+    "variant": { "type": "string" },
+    "profile_id": { "type": "string" },
+    "requested_by": { "type": "string" }
+  },
+  "additionalProperties": true
+}

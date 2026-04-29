@@ -1,1 +1,7 @@
-# TODO: define content
+roles:
+  operator:
+    permissions: [run_flow, view_reports]
+  reviewer:
+    permissions: [view_reports, review_gate]
+  approver:
+    permissions: [approve_activation]

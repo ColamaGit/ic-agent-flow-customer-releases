@@ -1,0 +1,21 @@
+{
+  "schema_version": "customer-package-release-manifest.v1",
+  "bundle_id": "runtime-bundle-tw-20260429140332",
+  "variant": "team_project",
+  "package_profile": "team_project",
+  "generated_at": "2026-04-29T06:04:54+00:00",
+  "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260429140332/ic-agent-flow-team-project-runtime-bundle-tw-20260429140332.tar.gz",
+  "payload_sha256": "436fba7c894d972689353c8e87c3b2e07130df02a94e3182fdbf423784670922",
+  "checksum_set_ref": "distribution/customer-packages/runtime-bundle-tw-20260429140332/team_project.checksums.json",
+  "installer_entrypoint_ref": "deployment/installers/install_runtime_bundle.py",
+  "docs_required": [
+    "README.md",
+    "deployment/docs/customer-package-operations-guide.v1.0.md",
+    "deployment/docs/EXTRACT_AND_INSTALL.md",
+    "deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+    "deployment/docs/OPENAI_SECRET_SETUP.md",
+    "deployment/docs/SUPPORT_EXPORT.md",
+    "deployment/docs/TROUBLESHOOTING.md"
+  ],
+  "runtime_environment_manifest_ref": "runtime/package_capabilities/runtime_environment_manifest.json"
+}
