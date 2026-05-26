@@ -2,6 +2,7 @@
   "version": "v1.6.0",
   "active_bundle_id": "runtime-bundle-tw-20260429140332",
   "active_bundle_path": "releases/runtime-bundle-tw-20260429140332",
+  "artifact_uri": "github://ColamaGit/ic-agent-flow-customer-releases@c502b9bd8219519528ba057a51fe04e0223b4a9c/releases/runtime-bundle-tw-20260429140332",
   "timezone": "Asia/Taipei",
   "updated_at": "2026-04-29T14:05:00+08:00",
   "note": "Semantic version entry points to one-copy staging bundle payload."
