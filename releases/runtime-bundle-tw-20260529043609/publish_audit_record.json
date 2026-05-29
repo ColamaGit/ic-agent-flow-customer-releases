@@ -31,7 +31,9 @@
   "atomic_rename_target": "releases/runtime-bundle-tw-20260529043609",
   "git_commit_performed": true,
   "git_commit_sha": "e607c5f113904d2ea3c61b72bef68eb7899ad009",
-  "git_push_performed": false,
+  "git_push_performed": true,
+  "git_push_head_sha": "ec79e3d9392f9401b0365efdcd568314be7247e8",
+  "git_push_remote": "origin/main",
   "published_files_count": 9,
-  "notes": "v1.17.0 full 3-variant release. Supersedes enterprise-site-only partial staging runtime-bundle-tw-20260527035932 (discarded)."
+  "notes": "v1.17.0 full 3-variant release. Supersedes enterprise-site-only partial staging runtime-bundle-tw-20260527035932 (discarded). Push confirmed to https://github.com/ColamaGit/ic-agent-flow-customer-releases.git"
 }
