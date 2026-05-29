@@ -1,0 +1,16 @@
+{
+  "bundle_id": "runtime-bundle-tw-20260529043609",
+  "semantic_version": "v1.17.0",
+  "variant": "solo_eval",
+  "validated_at": "2026-05-30T01:42:12+08:00",
+  "verify_script_result": "PASS",
+  "verify_script_layout": "flat",
+  "binary_sha256_match": true,
+  "binary_sha256": "c2df0b4e6ddb93f122dc605361e743e4fa31bb76ef8144f2e246496f903e1886",
+  "manifest_present": true,
+  "checksums_present": true,
+  "publish_manifest_present": true,
+  "publish_audit_record_present": true,
+  "denylist_clean": true,
+  "overall": "PASS"
+}

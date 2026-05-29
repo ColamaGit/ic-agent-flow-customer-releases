@@ -16,6 +16,16 @@
 - PRD v0.9: 受治理的開源 EDA 鏈（`H0/H1/H2/H4/H3`）
 - PRD v1.3: controlled release / contract boundary
 - PRD v1.5/v1.6: package variants + controlled distribution / IP boundary
+- PRD v1.10/v1.15: **v1.17.0** — Silicon Feedback 修復面板、Console Bootstrap Gate、Package Build Registry 歷史保護
+
+## 現行 Release
+
+| 版本 | Bundle | 狀態 |
+|---|---|---|
+| **v1.17.0** | `runtime-bundle-tw-20260529043609` | ✅ ACTIVE |
+| v1.6.0 | `runtime-bundle-tw-20260429140332` | LEGACY |
+
+詳見 [RELEASE_INDEX.md](./RELEASE_INDEX.md) 與 `releases/version-pointers/LATEST.json`。
 
 ## Expected Results After a Normal Run
 

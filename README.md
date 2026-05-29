@@ -16,6 +16,16 @@ It turns requirement/spec/graph/EDA execution/readiness outputs into auditable, 
 - PRD v0.9: governed open-source EDA chain (`H0/H1/H2/H4/H3`)
 - PRD v1.3: controlled release / contract boundary
 - PRD v1.5/v1.6: package variants + controlled distribution / IP boundary
+- PRD v1.10/v1.15: **v1.17.0** — Silicon Feedback Remediation Panel, Console Bootstrap Gate, Package Build Registry preservation
+
+## Active Release
+
+| Version | Bundle | Status |
+|---|---|---|
+| **v1.17.0** | `runtime-bundle-tw-20260529043609` | ✅ ACTIVE |
+| v1.6.0 | `runtime-bundle-tw-20260429140332` | LEGACY |
+
+See [RELEASE_INDEX.md](./RELEASE_INDEX.md) and `releases/version-pointers/LATEST.json` for authoritative pointers.
 
 ## Expected Results After a Normal Run
 
