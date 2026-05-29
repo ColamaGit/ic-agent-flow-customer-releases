@@ -29,7 +29,8 @@
   ],
   "atomic_staging_folder": "releases/.tmp_runtime-bundle-tw-20260529043609",
   "atomic_rename_target": "releases/runtime-bundle-tw-20260529043609",
-  "git_commit_performed": false,
+  "git_commit_performed": true,
+  "git_commit_sha": "e607c5f113904d2ea3c61b72bef68eb7899ad009",
   "git_push_performed": false,
   "published_files_count": 9,
   "notes": "v1.17.0 full 3-variant release. Supersedes enterprise-site-only partial staging runtime-bundle-tw-20260527035932 (discarded)."
