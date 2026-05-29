@@ -1,0 +1,36 @@
+{
+  "schema_version": "v1.17.customer-publish-audit-record.v1",
+  "generated_at": "2026-05-30T01:18:20+08:00",
+  "bundle_id": "runtime-bundle-tw-20260529043609",
+  "semantic_version": "v1.17.0",
+  "modes": ["enterprise_site", "solo_eval", "team_project"],
+  "operator_role": "RELEASE_OPERATOR",
+  "binary_integrity_verified": true,
+  "binary_verification_method": "shasum -a 256 source vs destination",
+  "variants_verified": [
+    {
+      "variant": "enterprise_site",
+      "source_sha256": "78e0d489fe938eb9ed0f0bf92d0dafcbf0c2c0720e46d06633780420c3a9e8f9",
+      "dest_sha256": "78e0d489fe938eb9ed0f0bf92d0dafcbf0c2c0720e46d06633780420c3a9e8f9",
+      "match": true
+    },
+    {
+      "variant": "solo_eval",
+      "source_sha256": "c2df0b4e6ddb93f122dc605361e743e4fa31bb76ef8144f2e246496f903e1886",
+      "dest_sha256": "c2df0b4e6ddb93f122dc605361e743e4fa31bb76ef8144f2e246496f903e1886",
+      "match": true
+    },
+    {
+      "variant": "team_project",
+      "source_sha256": "3ad59af7244cb9f9ae5558ff62381583d0c3cd81f3d5f8aef2ac1ab8dcd32fa7",
+      "dest_sha256": "3ad59af7244cb9f9ae5558ff62381583d0c3cd81f3d5f8aef2ac1ab8dcd32fa7",
+      "match": true
+    }
+  ],
+  "atomic_staging_folder": "releases/.tmp_runtime-bundle-tw-20260529043609",
+  "atomic_rename_target": "releases/runtime-bundle-tw-20260529043609",
+  "git_commit_performed": false,
+  "git_push_performed": false,
+  "published_files_count": 9,
+  "notes": "v1.17.0 full 3-variant release. Supersedes enterprise-site-only partial staging runtime-bundle-tw-20260527035932 (discarded)."
+}

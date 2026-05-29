@@ -1,8 +1,9 @@
 {
-  "active_version": "v1.17.0",
+  "version": "v1.17.0",
   "active_bundle_id": "runtime-bundle-tw-20260529043609",
   "active_bundle_path": "releases/runtime-bundle-tw-20260529043609",
   "variants": ["enterprise_site", "solo_eval", "team_project"],
   "timezone": "Asia/Taipei",
-  "updated_at": "2026-05-30T01:18:20+08:00"
+  "updated_at": "2026-05-30T01:18:20+08:00",
+  "note": "Semantic version entry points to one-copy staging bundle payload. Full 3-variant release."
 }

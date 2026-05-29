@@ -1,0 +1,63 @@
+{
+  "schema_version": "v1.17.customer-publish-manifest.v1",
+  "bundle_id": "runtime-bundle-tw-20260529043609",
+  "semantic_version": "v1.17.0",
+  "modes": ["enterprise_site", "solo_eval", "team_project"],
+  "published_files": [
+    {
+      "variant": "enterprise_site",
+      "filename": "ic-agent-flow-enterprise-site-runtime-bundle-tw-20260529043609.tar.gz",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/ic-agent-flow-enterprise-site-runtime-bundle-tw-20260529043609.tar.gz",
+      "sha256": "78e0d489fe938eb9ed0f0bf92d0dafcbf0c2c0720e46d06633780420c3a9e8f9"
+    },
+    {
+      "variant": "enterprise_site",
+      "filename": "enterprise_site.manifest.json",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/enterprise_site.manifest.json",
+      "sha256": "ffaef423f148670cd95662afefccd1fd8c6ca0189d65cd8a5c2a62dbe75d3673"
+    },
+    {
+      "variant": "enterprise_site",
+      "filename": "enterprise_site.checksums.json",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/enterprise_site.checksums.json",
+      "sha256": "473495c24bb1b2039f5bc084c362cccbc84ff7c926740aa94e9b3ac00fcf5b22"
+    },
+    {
+      "variant": "solo_eval",
+      "filename": "ic-agent-flow-solo-eval-runtime-bundle-tw-20260529043609.tar.gz",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/ic-agent-flow-solo-eval-runtime-bundle-tw-20260529043609.tar.gz",
+      "sha256": "c2df0b4e6ddb93f122dc605361e743e4fa31bb76ef8144f2e246496f903e1886"
+    },
+    {
+      "variant": "solo_eval",
+      "filename": "solo_eval.manifest.json",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/solo_eval.manifest.json",
+      "sha256": "2e4995eb310de25296121c6679f04f06838f5add2daaf0f24138e3a33a2b5231"
+    },
+    {
+      "variant": "solo_eval",
+      "filename": "solo_eval.checksums.json",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/solo_eval.checksums.json",
+      "sha256": "1bd3b9f0136c08bfbf96f654628e901d138c7b7534b1e7152737f04e7dd4681c"
+    },
+    {
+      "variant": "team_project",
+      "filename": "ic-agent-flow-team-project-runtime-bundle-tw-20260529043609.tar.gz",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/ic-agent-flow-team-project-runtime-bundle-tw-20260529043609.tar.gz",
+      "sha256": "3ad59af7244cb9f9ae5558ff62381583d0c3cd81f3d5f8aef2ac1ab8dcd32fa7"
+    },
+    {
+      "variant": "team_project",
+      "filename": "team_project.manifest.json",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/team_project.manifest.json",
+      "sha256": "f666f93cdccf0126b04537ad6a77aa4696fcf09948ff88fbb1e1aa314dd0dfc0"
+    },
+    {
+      "variant": "team_project",
+      "filename": "team_project.checksums.json",
+      "relative_path": "releases/runtime-bundle-tw-20260529043609/team_project.checksums.json",
+      "sha256": "f5398eb5ee460e7abadcb65d56195d71f51873178a733c7258fd4b4f61468fa0"
+    }
+  ],
+  "generated_at": "2026-05-30T01:18:20+08:00"
+}
