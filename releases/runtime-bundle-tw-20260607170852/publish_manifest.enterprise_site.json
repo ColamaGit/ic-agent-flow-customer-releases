@@ -1,0 +1,25 @@
+{
+  "schema_version": "v1.17.customer-publish-manifest.v1",
+  "bundle_id": "runtime-bundle-tw-20260607170852",
+  "mode": "enterprise_site",
+  "published_files": [
+    {
+      "filename": "ic-agent-flow-enterprise-site-runtime-bundle-tw-20260607170852.tar.gz",
+      "relative_path": "releases/runtime-bundle-tw-20260607170852/ic-agent-flow-enterprise-site-runtime-bundle-tw-20260607170852.tar.gz",
+      "sha256": "970b580bb77491e69515b8f1e8a78affd4bdd003850743ed31e83ab9aa8e5de2"
+    },
+    {
+      "filename": "enterprise_site.manifest.json",
+      "relative_path": "releases/runtime-bundle-tw-20260607170852/enterprise_site.manifest.json",
+      "sha256": "9c4d01e14dc1ad73e9e05f0cd3972d5204e607d5b581559ce9a3e18c5d4b91e4"
+    },
+    {
+      "filename": "enterprise_site.checksums.json",
+      "relative_path": "releases/runtime-bundle-tw-20260607170852/enterprise_site.checksums.json",
+      "sha256": "782bd347f6ccb48961208c8af36e0c2fccb40187b570ae217268592af6b41d7d"
+    }
+  ],
+  "preflight_id": "pf_tw_20260607_174834_bc6302",
+  "preflight_digest": "78fc12a37e3c479087c5211e1895dd0bdfecdb7066d3b757dfb2c63381d0080c",
+  "generated_at": "2026-06-07T17:48:36.545538+08:00"
+}

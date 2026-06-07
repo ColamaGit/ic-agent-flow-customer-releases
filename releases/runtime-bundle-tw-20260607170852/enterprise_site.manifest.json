@@ -1,12 +1,12 @@
 {
   "schema_version": "customer-package-release-manifest.v1",
-  "bundle_id": "runtime-bundle-tw-20260607124342",
+  "bundle_id": "runtime-bundle-tw-20260607170852",
   "variant": "enterprise_site",
   "package_profile": "enterprise_site",
-  "generated_at": "2026-06-07T04:43:57+00:00",
-  "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260607124342/ic-agent-flow-enterprise-site-runtime-bundle-tw-20260607124342.tar.gz",
-  "payload_sha256": "9fc7e6d28b85317ac5b459d893a2ff0b9dd95c281eb05bdaac18dbdfa87ae17e",
-  "checksum_set_ref": "distribution/customer-packages/runtime-bundle-tw-20260607124342/enterprise_site.checksums.json",
+  "generated_at": "2026-06-07T09:11:40+00:00",
+  "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260607170852/ic-agent-flow-enterprise-site-runtime-bundle-tw-20260607170852.tar.gz",
+  "payload_sha256": "970b580bb77491e69515b8f1e8a78affd4bdd003850743ed31e83ab9aa8e5de2",
+  "checksum_set_ref": "distribution/customer-packages/runtime-bundle-tw-20260607170852/enterprise_site.checksums.json",
   "installer_entrypoint_ref": "deployment/installers/install_runtime_bundle.py",
   "docs_required": [
     "README.md",
@@ -37,7 +37,7 @@
   ],
   "runtime_environment_manifest_ref": "runtime/package_capabilities/runtime_environment_manifest.json",
   "reference_docs_catalog_ref": "deployment/docs/reference_docs.catalog.v1.json",
-  "docs_resolution_report_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260607124342/enterprise_site/manifests/docs_resolution_report.json",
-  "skill_pack_resolution_report_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260607124342/enterprise_site/manifests/skill_pack_resolution_report.json",
-  "customer_package_doc_manifest_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260607124342/enterprise_site/manifests/customer_package_doc_manifest.json"
+  "docs_resolution_report_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260607170852/enterprise_site/manifests/docs_resolution_report.json",
+  "skill_pack_resolution_report_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260607170852/enterprise_site/manifests/skill_pack_resolution_report.json",
+  "customer_package_doc_manifest_ref": "artifacts/customer-release-staging/runtime-bundle-tw-20260607170852/enterprise_site/manifests/customer_package_doc_manifest.json"
 }

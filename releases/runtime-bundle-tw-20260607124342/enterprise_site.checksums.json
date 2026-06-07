@@ -1,8 +1,0 @@
-{
-  "bundle_id": "runtime-bundle-tw-20260607124342",
-  "variant": "enterprise_site",
-  "generated_at": "2026-06-07T04:43:57+00:00",
-  "payload_archive_ref": "distribution/customer-packages/runtime-bundle-tw-20260607124342/ic-agent-flow-enterprise-site-runtime-bundle-tw-20260607124342.tar.gz",
-  "payload_sha256": "9fc7e6d28b85317ac5b459d893a2ff0b9dd95c281eb05bdaac18dbdfa87ae17e",
-  "algorithm": "sha256"
-}
