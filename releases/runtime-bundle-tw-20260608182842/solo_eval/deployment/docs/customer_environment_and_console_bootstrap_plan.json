@@ -1,0 +1,131 @@
+{
+  "plan_version": "1.0.0",
+  "governance_law": "No Console, No Customer-Operable Claim",
+  "console_architecture": {
+    "frontend": {
+      "name": "vite_react_console",
+      "default_port": 5173,
+      "required": true,
+      "healthcheck_url": "http://127.0.0.1:5173",
+      "assets_expected": [
+        "index.html",
+        "src/main.tsx"
+      ]
+    },
+    "backend": {
+      "name": "intake_api_server",
+      "default_port": 8787,
+      "required": true,
+      "healthcheck_url": "http://127.0.0.1:8787/api/intake/options",
+      "endpoints_expected": [
+        "/api/intake/options",
+        "/api/intake/submit"
+      ]
+    }
+  },
+  "system_prerequisites": [
+    {
+      "name": "python",
+      "role": "core_runtime_and_backend_api",
+      "version_check_command": "python3 --version",
+      "validated_version_pattern": "^Python 3\\.(12|13)\\.",
+      "required": true
+    },
+    {
+      "name": "node",
+      "role": "frontend_compilation_and_dev_server",
+      "version_check_command": "node --version",
+      "validated_version_pattern": "^v(20|22)\\.",
+      "required": true
+    },
+    {
+      "name": "npm",
+      "role": "frontend_package_management",
+      "version_check_command": "npm --version",
+      "validated_version_pattern": "^(9|10|11)\\.",
+      "required": true
+    },
+    {
+      "name": "lsof",
+      "role": "preflight_port_signature_scan",
+      "version_check_command": "lsof -v",
+      "required": true
+    },
+    {
+      "name": "curl",
+      "role": "healthcheck_http_probe",
+      "version_check_command": "curl --version",
+      "required": false,
+      "fallback_to_python_urllib": true
+    }
+  ],
+  "required_bootstrap_order": [
+    "verify_system_prerequisites",
+    "install_python_dependencies",
+    "install_node_dependencies",
+    "verify_ports_available",
+    "launch_intake_api_server",
+    "launch_vite_console",
+    "run_healthchecks",
+    "emit_console_bootstrap_record"
+  ],
+  "fail_closed_conditions": [
+    "node_missing",
+    "npm_missing",
+    "python_missing",
+    "lsof_missing",
+    "port_8787_occupied_by_unknown_process",
+    "port_5173_occupied_by_unknown_process",
+    "intake_api_healthcheck_failed",
+    "vite_console_healthcheck_failed",
+    "boot_token_missing_or_invalid",
+    "package_extract_path_resolution_failed",
+    "developer_absolute_path_leak_detected",
+    "minimum_action_governance_smoke_failed"
+  ],
+  "healthcheck_contract": {
+    "probe_methods": [
+      {
+        "type": "curl",
+        "command": "curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8787/api/intake/options"
+      },
+      {
+        "type": "python_urllib",
+        "code_snippet": "import urllib.request, json; res = urllib.request.urlopen('http://127.0.0.1:8787/api/intake/options'); data = json.loads(res.read().decode())"
+      }
+    ],
+    "expected_response": {
+      "status_code": 200,
+      "headers": {
+        "content-type": "application/json"
+      },
+      "schema_assertions": {
+        "server_boot_token": "string",
+        "supported_chips": "array"
+      },
+      "html_fallback_rejection": {
+        "reason": "prevent_vite_dev_server_html_fallbacks_from_mocking_api_response",
+        "contains_not": "<!DOCTYPE html>"
+      }
+    }
+  },
+  "action_governance_smoke_contract": {
+    "action_payload": {
+      "chip_id": "SN2025",
+      "action_type": "SMOKE_DISPOSABLE_APPROVE",
+      "role": "operator",
+      "rational": "Verification of human authority operation surface bootstrap status."
+    },
+    "expected_produced_evidence": [
+      "console_action_audit_smoke_result.json"
+    ],
+    "required_audit_fields": [
+      "bootstrap_id",
+      "actor",
+      "role",
+      "target",
+      "before-after",
+      "evidence_refs"
+    ]
+  }
+}

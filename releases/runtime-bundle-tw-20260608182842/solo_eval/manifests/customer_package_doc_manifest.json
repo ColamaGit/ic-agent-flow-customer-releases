@@ -1,0 +1,205 @@
+{
+  "mode": "solo_eval",
+  "entries": [
+    {
+      "doc_id": "root_readme",
+      "title": "README",
+      "bundle_path": "README.md",
+      "extract_path": "README.md",
+      "hash": "99529fddaabd6206eb8a8fbe56070ef2be34858f93b4c2ed64372ea0ef185d1d",
+      "classification_safe_view": "PUBLIC"
+    },
+    {
+      "doc_id": "package_contents",
+      "title": "PACKAGE_CONTENTS",
+      "bundle_path": "deployment/docs/PACKAGE_CONTENTS.md",
+      "extract_path": "deployment/docs/PACKAGE_CONTENTS.md",
+      "hash": "dd3ef9ccba372a8c4c0153341c01f06d809476baa326d865157fbd9f7c93a525",
+      "classification_safe_view": "PACKAGE_CONTENT"
+    },
+    {
+      "doc_id": "extract_install",
+      "title": "EXTRACT_AND_INSTALL",
+      "bundle_path": "deployment/docs/EXTRACT_AND_INSTALL.md",
+      "extract_path": "deployment/docs/EXTRACT_AND_INSTALL.md",
+      "hash": "982f24d858970749f831bb01949ebbe80d62c7c90f489c49831dcbaaef16c69e",
+      "classification_safe_view": "INSTALL_GUIDE"
+    },
+    {
+      "doc_id": "folder_structure",
+      "title": "FOLDER_STRUCTURE",
+      "bundle_path": "deployment/docs/FOLDER_STRUCTURE.md",
+      "extract_path": "deployment/docs/FOLDER_STRUCTURE.md",
+      "hash": "7162262db726b64598003f8665e7c9cd7bd63180af4f90491c512d74e2cd7d73",
+      "classification_safe_view": "FOLDER_LAYOUT"
+    },
+    {
+      "doc_id": "profile_selection",
+      "title": "PROFILE_SELECTION_GUIDE",
+      "bundle_path": "deployment/docs/PROFILE_SELECTION_GUIDE.md",
+      "extract_path": "deployment/docs/PROFILE_SELECTION_GUIDE.md",
+      "hash": "3855480a7c3409ea7e700fe3151cb55032d2303975c5dd79bdfde29f84a8728c",
+      "classification_safe_view": "PROFILE_GUIDE"
+    },
+    {
+      "doc_id": "customer_activation_flow",
+      "title": "CUSTOMER_ACTIVATION_FLOW",
+      "bundle_path": "deployment/docs/CUSTOMER_ACTIVATION_FLOW.md",
+      "extract_path": "deployment/docs/CUSTOMER_ACTIVATION_FLOW.md",
+      "hash": "de745d547910115b7e15aaedb49606f87e90bfd221effb2413ecc7c0f87f0914",
+      "classification_safe_view": "ACTIVATION_FLOW"
+    },
+    {
+      "doc_id": "security_secrets",
+      "title": "SECURITY_AND_SECRETS",
+      "bundle_path": "deployment/docs/SECURITY_AND_SECRETS.md",
+      "extract_path": "deployment/docs/SECURITY_AND_SECRETS.md",
+      "hash": "5a469724dffd76cc6a5b21ed354cdd2c0fadf577b541f509aa27d0f168fba436",
+      "classification_safe_view": "SECURITY_SETUP"
+    },
+    {
+      "doc_id": "ip_support_boundary",
+      "title": "IP_AND_SUPPORT_BOUNDARY",
+      "bundle_path": "deployment/docs/IP_AND_SUPPORT_BOUNDARY.md",
+      "extract_path": "deployment/docs/IP_AND_SUPPORT_BOUNDARY.md",
+      "hash": "50d7a6db07b80a9eb024c713b6224d214de1c9fdaf343bb740ba76d1d482a414",
+      "classification_safe_view": "IP_SUPPORT_BOUNDARY"
+    },
+    {
+      "doc_id": "customer_pkg_ops",
+      "title": "customer-package-operations-guide.v1.0",
+      "bundle_path": "deployment/docs/customer-package-operations-guide.v1.0.md",
+      "extract_path": "deployment/docs/customer-package-operations-guide.v1.0.md",
+      "hash": "a1037604d1145e30376bbf504b3ad674df47036ef7d004e58603b7b8c3866cab",
+      "classification_safe_view": "OPERATIONS_GUIDE"
+    },
+    {
+      "doc_id": "customer_console_ops",
+      "title": "customer-console-and-skill-operations-guide.v1.9",
+      "bundle_path": "deployment/docs/customer-console-and-skill-operations-guide.v1.9.md",
+      "extract_path": "deployment/docs/customer-console-and-skill-operations-guide.v1.9.md",
+      "hash": "6b462a84bba57a5a1816da780f8104318a3d8f82aae45b1d67dd73f4130dcd2f",
+      "classification_safe_view": "CONSOLE_SKILL_GUIDE"
+    },
+    {
+      "doc_id": "deployment_ops_guide",
+      "title": "deployment_operation_guide.v0.1",
+      "bundle_path": "deployment/docs/deployment_operation_guide.v0.1.md",
+      "extract_path": "deployment/docs/deployment_operation_guide.v0.1.md",
+      "hash": "4c35da6c8e35baabc9b53fdb4339e38eab3d5ba65139a9d2c55e5370f9d20581",
+      "classification_safe_view": "DEPLOYMENT_OPERATION_GUIDE"
+    },
+    {
+      "doc_id": "local_eda_readiness",
+      "title": "customer-local-real-eda-rerun-and-readiness-guide.v0.1",
+      "bundle_path": "deployment/docs/customer-local-real-eda-rerun-and-readiness-guide.v0.1.md",
+      "extract_path": "deployment/docs/customer-local-real-eda-rerun-and-readiness-guide.v0.1.md",
+      "hash": "d5561531f81cd03d9bcd03fd5682d16482a53fea22fc621be6a8f1eadb8c9ee9",
+      "classification_safe_view": "EDA_READINESS_GUIDE"
+    },
+    {
+      "doc_id": "eda_binding",
+      "title": "EDA_TOOLCHAIN_BINDING",
+      "bundle_path": "deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "extract_path": "deployment/docs/EDA_TOOLCHAIN_BINDING.md",
+      "hash": "1a60d402a9a9815c9e4d4180c6691048bee9557cec1aa810404e90ab4a59b019",
+      "classification_safe_view": "EDA_BINDING"
+    },
+    {
+      "doc_id": "open_source_eda_toolchain_recommendation",
+      "title": "Open-Source EDA Toolchain Recommendation",
+      "bundle_path": "deployment/docs/OPEN_SOURCE_EDA_TOOLCHAIN_RECOMMENDATION.md",
+      "extract_path": "deployment/docs/OPEN_SOURCE_EDA_TOOLCHAIN_RECOMMENDATION.md",
+      "hash": "85db2a5075b18828618d8e77b6f2a70ded9bfa38fcc7e27642d0ed7333eb7503",
+      "classification_safe_view": "customer_toolchain_guidance"
+    },
+    {
+      "doc_id": "open_source_eda_toolchain_agent_install_plan",
+      "title": "Open-Source EDA Toolchain Agent Install Plan",
+      "bundle_path": "deployment/docs/open_source_eda_toolchain_agent_install_plan.json",
+      "extract_path": "deployment/docs/open_source_eda_toolchain_agent_install_plan.json",
+      "hash": "3ee2c96f99b26a28e1bdb26377e9a2987b79fd454c2e661dc25e5053a5882bd8",
+      "classification_safe_view": "customer_agent_install_plan"
+    },
+    {
+      "doc_id": "openai_secret_setup",
+      "title": "OPENAI_SECRET_SETUP",
+      "bundle_path": "deployment/docs/OPENAI_SECRET_SETUP.md",
+      "extract_path": "deployment/docs/OPENAI_SECRET_SETUP.md",
+      "hash": "881b09c8e40b9c9625cc0e5d9a4aef263e57da1af7c493a03f6c56f87433b121",
+      "classification_safe_view": "SECRET_SETUP"
+    },
+    {
+      "doc_id": "support_export",
+      "title": "SUPPORT_EXPORT",
+      "bundle_path": "deployment/docs/SUPPORT_EXPORT.md",
+      "extract_path": "deployment/docs/SUPPORT_EXPORT.md",
+      "hash": "c215e6fba6e20af08d229c2bdd9195ca807c98267e533f133049a1ee9cbd63fc",
+      "classification_safe_view": "SUPPORT_EXPORT"
+    },
+    {
+      "doc_id": "troubleshooting",
+      "title": "TROUBLESHOOTING",
+      "bundle_path": "deployment/docs/TROUBLESHOOTING.md",
+      "extract_path": "deployment/docs/TROUBLESHOOTING.md",
+      "hash": "c78bc73a0168572071f9dc69793849e46059adcfcff05aa8d0996487b930a378",
+      "classification_safe_view": "TROUBLESHOOTING"
+    },
+    {
+      "doc_id": "customer_tool_plugin_guideline",
+      "title": "customer_tool_plugin_guideline",
+      "bundle_path": "deployment/docs/customer_tool_plugin_guideline.md",
+      "extract_path": "deployment/docs/customer_tool_plugin_guideline.md",
+      "hash": "dca95c5e80ed5b1432ea7556b2f7852e5ee173af7c3d991aa0b00c9a9b48bd4e",
+      "classification_safe_view": "PLUGIN_GUIDELINE"
+    },
+    {
+      "doc_id": "customer_tool_plugin_playbook",
+      "title": "customer_tool_plugin_playbook",
+      "bundle_path": "deployment/docs/customer_tool_plugin_playbook.json",
+      "extract_path": "deployment/docs/customer_tool_plugin_playbook.json",
+      "hash": "2e3e5775a33c4d51db43a40c7cf7127f2fbe04372b98bd682fbee612e52a9f84",
+      "classification_safe_view": "PLUGIN_PLAYBOOK"
+    },
+    {
+      "doc_id": "knowledge_flywheel_agent_consumption_quickstart",
+      "title": "Knowledge Flywheel Agent Consumption Quickstart",
+      "bundle_path": "docs/knowledge_flywheel_agent_consumption_quickstart.v0.1.md",
+      "extract_path": "docs/knowledge_flywheel_agent_consumption_quickstart.v0.1.md",
+      "hash": "3a9b8951e950718e48969293a9aa1006918aba66042ea453c6ff3eed769e9cc6",
+      "classification_safe_view": "PUBLIC"
+    },
+    {
+      "doc_id": "customer_environment_and_console_bootstrap",
+      "title": "Customer Environment & Visual Console Bootstrap Guidelines",
+      "bundle_path": "deployment/docs/CUSTOMER_ENVIRONMENT_AND_CONSOLE_BOOTSTRAP.md",
+      "extract_path": "deployment/docs/CUSTOMER_ENVIRONMENT_AND_CONSOLE_BOOTSTRAP.md",
+      "hash": "4f2db074f734eb7dc57b054586a781065b0bc3081543525accff379612614995",
+      "classification_safe_view": "CONSOLE_BOOTSTRAP_GUIDE"
+    },
+    {
+      "doc_id": "customer_environment_and_console_bootstrap_plan",
+      "title": "Customer Environment & Visual Console Bootstrap Plan",
+      "bundle_path": "deployment/docs/customer_environment_and_console_bootstrap_plan.json",
+      "extract_path": "deployment/docs/customer_environment_and_console_bootstrap_plan.json",
+      "hash": "bb033354473da763eaac1378ad0bb3b0f1c7f1064c7e8507c768ade473d8e38a",
+      "classification_safe_view": "CONSOLE_BOOTSTRAP_PLAN"
+    },
+    {
+      "doc_id": "deployment_docs_readme",
+      "title": "ICAF Deployment Documentation Map",
+      "bundle_path": "deployment/docs/README.md",
+      "extract_path": "deployment/docs/README.md",
+      "hash": "2f863bd3acb67265c351b93bf366650a9dad0681d0b648cb9795c7a75d0466c4",
+      "classification_safe_view": "DEPLOYMENT_DOCS_MAP"
+    },
+    {
+      "doc_id": "eda_os_dependency_note",
+      "title": "Open Source EDA Tools OS Dependency Note",
+      "bundle_path": "deployment/docs/EDA_OS_DEPENDENCY_NOTE.md",
+      "extract_path": "deployment/docs/EDA_OS_DEPENDENCY_NOTE.md",
+      "hash": "b82d2abe134752bf59eb75098eb8ccfbb7c9a3df82adcb71920b4411d4b7bff6",
+      "classification_safe_view": "PUBLIC"
+    }
+  ]
+}
