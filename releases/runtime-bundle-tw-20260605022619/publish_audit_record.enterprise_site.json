@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1.17.customer-publish-audit-record.v1",
+  "generated_at": "2026-06-11T02:59:00.772025+08:00",
+  "bundle_id": "runtime-bundle-tw-20260605022619",
+  "mode": "enterprise_site",
+  "preflight_id": "pf_tw_20260611_025859_4241db",
+  "operator_role": "RELEASE_OPERATOR",
+  "lock_acquired": true,
+  "atomic_staging_folder": "releases/runtime-bundle-tw-20260605022619",
+  "atomic_rename_target": "releases/runtime-bundle-tw-20260605022619",
+  "git_commit_performed": false,
+  "git_push_performed": false,
+  "published_files_count": 3
+}

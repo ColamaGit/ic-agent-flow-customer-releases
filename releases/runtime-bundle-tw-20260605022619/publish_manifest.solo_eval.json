@@ -1,0 +1,25 @@
+{
+  "schema_version": "v1.17.customer-publish-manifest.v1",
+  "bundle_id": "runtime-bundle-tw-20260605022619",
+  "mode": "solo_eval",
+  "published_files": [
+    {
+      "filename": "ic-agent-flow-solo-eval-runtime-bundle-tw-20260605022619.tar.gz",
+      "relative_path": "releases/runtime-bundle-tw-20260605022619/ic-agent-flow-solo-eval-runtime-bundle-tw-20260605022619.tar.gz",
+      "sha256": "a383337a467f34dd1c7cab3d028a905c4f3e6b4acd3451ff2e47dc3b4545c403"
+    },
+    {
+      "filename": "solo_eval.manifest.json",
+      "relative_path": "releases/runtime-bundle-tw-20260605022619/solo_eval.manifest.json",
+      "sha256": "3b454458c8555d98deaa22231e4e133e25716f184c6a01df1c41b757fecf8503"
+    },
+    {
+      "filename": "solo_eval.checksums.json",
+      "relative_path": "releases/runtime-bundle-tw-20260605022619/solo_eval.checksums.json",
+      "sha256": "b73b1a331d83ca65b4e8b1a1f7f1190926212568186aa36bff71274a33c77d77"
+    }
+  ],
+  "preflight_id": "pf_tw_20260611_025926_92371c",
+  "preflight_digest": "329364a217f8902a5a258511a417f7e5a77d2813bb14ec0b0e07f3c6bd822d1d",
+  "generated_at": "2026-06-11T02:59:27.546250+08:00"
+}
