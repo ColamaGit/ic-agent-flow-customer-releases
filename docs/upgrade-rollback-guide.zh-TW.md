@@ -1,6 +1,8 @@
-# Upgrade and Rollback Guide
+# 升版與回滾指南
 
-1. Verify the new bundle first.
-2. Upgrade within a controlled window.
-3. Roll back immediately if preflight/smoke fails.
-4. Keep upgrade/rollback audit records.
+[EN](./upgrade-rollback-guide.md) | [zh-TW](./upgrade-rollback-guide.zh-TW.md)
+
+1. 先驗證新 bundle。
+2. 在受控的時間視窗內進行升版。
+3. 若預飛測試/冒煙測試失敗，立即回滾。
+4. 保存升版/回滾的稽核紀錄。

@@ -1,6 +1,8 @@
-# Security and Secrets
+# 安全性與機密資料
 
-- Secrets must not be packaged.
-- Secret values must not be exported in support bundles.
-- Use a secret manager for production environments.
-- Apply redaction to logs and exports.
+[EN](./security-and-secrets.md) | [zh-TW](./security-and-secrets.zh-TW.md)
+
+- 機密資料不得打包進套件。
+- 機密資料值不得匯出於支援 bundle 中。
+- 在正式生產環境使用機密管理器。
+- 對 log 與匯出內容套用脫敏處理。

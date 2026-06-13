@@ -1,23 +1,25 @@
-# ic-agent-flow Capability One-Pager
+# ic-agent-flow 能力一頁摘要
 
-## What it is
+[EN](./01-capability-one-pager.md) | [zh-TW](./01-capability-one-pager.zh-TW.md)
 
-`ic-agent-flow` is a governance-first IC design flow runtime with auditable evidence outputs.
+## 它是什麼
 
-## What it does now
+`ic-agent-flow` 是一套以治理優先的 IC 設計流程執行期，產出可稽核的證據鏈。
 
-- Upstream chain: `intake -> spec -> graph -> validation -> freeze -> plan`
-- EDA chain: `H0/H1/H2/H4/H3`
-- Outputs: raw/normalized/evidence + readiness verdict
-- Delivery: `solo_eval` / `team_project` / `enterprise_site` package variants
+## 目前能做什麼
 
-## Typical outputs
+- 上游流程鏈：`intake -> spec -> graph -> validation -> freeze -> plan`
+- EDA 執行鏈：`H0/H1/H2/H4/H3`（含 V1–V4、H5、H9、H10、H6、H7、H8）
+- 產出：raw/normalized/evidence + 就緒性裁決
+- 交付形式：`solo_eval` / `team_project` / `enterprise_site` 套件類型
 
-1. upstream truth objects
-2. EDA artifacts
-3. readiness report and gate verdict
-4. manifest/checksum/lineage records
+## 典型產出物
 
-## Boundary
+1. 上游真值物件（規格/架構圖/驗證/凍結/計畫）
+2. EDA 產出物（raw/normalized/evidence）
+3. 就緒性報告與關卡裁決
+4. 清單/checksum/溯源鏈紀錄
 
-This repo is a customer-facing release surface, not a source development repository.
+## 邊界
+
+本儲存庫為客戶端發布介面，非原始碼開發儲存庫。

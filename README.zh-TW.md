@@ -1,56 +1,235 @@
-# ic-agent-flow Customer Releases
+# ic-agent-flow (ICAF) — 客戶發布版
 
 [EN](./README.md) | [zh-TW](./README.zh-TW.md)
 
-此儲存庫是 `ic-agent-flow` 對客戶公開的 release registry。  
-它不是原始碼開發儲存庫。
+> **這是 `ic-agent-flow (ICAF)` 的官方客戶發布版儲存庫。**
+> 本儲存庫不是原始碼開發儲存庫。
+> 此處所有發布版均為經過驗證的正式套件。
 
-## What is ic-agent-flow
+---
 
-`ic-agent-flow` 是一套以治理優先（governance-first）的 IC 設計流程 runtime。  
-它把 requirement/spec/graph/EDA execution/readiness 產物串成可稽核、可重播的證據鏈。
+## 🤔 ICAF 是什麼？
 
-## Current Capability (Customer Surface)
+**ic-agent-flow（ICAF）** 是一套能幫助工程團隊**正確、安全、完整留下紀錄地設計晶片**的執行系統——從最初的需求想法，一路到把晶片設計交給晶圓廠為止。
 
-- PRD v1.0: `intake -> spec -> graph -> validation -> freeze -> plan`
-- PRD v0.9: 受治理的開源 EDA 鏈（`H0/H1/H2/H4/H3`）
-- PRD v1.3: controlled release / contract boundary
-- PRD v1.5/v1.6: package variants + controlled distribution / IP boundary
-- PRD v1.10/v1.15: **v1.17.0** — Silicon Feedback 修復面板、Console Bootstrap Gate、Package Build Registry 歷史保護
+用比較白話的方式說：
 
-## 現行 Release
+> 想像你要用樂高拼一個有幾千個零件的超複雜模型，而且很多人一起拼，最後還必須完美無缺才能送去工廠量產。ICAF 就是那本**逐步拼裝說明書 + 品質檢查系統**，確保每個零件都裝對了、每個檢查員都簽名確認了、每一個決策都有書面紀錄可以日後查閱。
 
-| 版本 | Bundle | 狀態 |
-|---|---|---|
-| **v1.17.0** | `runtime-bundle-tw-20260529043609` | ✅ ACTIVE |
-| v1.6.0 | `runtime-bundle-tw-20260429140332` | LEGACY |
+ICAF 做的就是這件事，只不過用在**IC（積體電路）晶片設計**上。這裡的「樂高零件」是電路規格書、架構圖、模擬結果、佈局檔案這些東西。
 
-詳見 [RELEASE_INDEX.md](./RELEASE_INDEX.md) 與 `releases/version-pointers/LATEST.json`。
+---
 
-## Expected Results After a Normal Run
+## 🚀 ICAF 可以做什麼？
 
-1. 上游真值物件（spec/graph/validation/freeze/plan）
-2. EDA artifacts（raw/normalized/evidence）
-3. readiness report 與 gate verdict
-4. 可稽核的 manifest/checksum/lineage 紀錄
+ICAF 涵蓋晶片從想法到工廠交付的**完整旅程**：
 
-## Open-Source EDA Toolchain References
+| 階段 | ICAF 做什麼 |
+|------|------------|
+| 📋 **規格與架構** | 接收你的晶片需求，協助生成並驗證架構圖，然後「凍結」它，讓所有人都以同一份真值為準 |
+| ⚙️ **EDA 執行** | 自動執行真正的開源 EDA（晶片設計）工具——模擬、合成、佈局佈線、時序分析、佈局驗證 |
+| 🔍 **證據收集** | 每次工具執行都會產生可稽核的證據檔案（不只是 log，而是有 checksum 的機器可讀紀錄） |
+| ✅ **就緒性關卡** | 在每個階段依照定義好的通過/失敗規則做檢查，通過才允許進入下一階段 |
+| 🖥️ **操作員主控台** | 網頁式儀表板，讓你的團隊能看到完整的晶片狀態、審閱決策、觸發操作 |
+| 📦 **打包與發布** | 將最終驗證後的執行期打包，部署給你的團隊或整個組織 |
+| 🔄 **矽晶回饋** | 晶片從工廠回來後，把真實的矽晶測試結果帶回系統，保持追溯性 |
 
-請見：[docs/eda-toolchain-candidates-reference.md](./docs/eda-toolchain-candidates-reference.md)
+---
 
-## Guest/Customer Reading Pack
+## 🔧 它是怎麼運作的？
 
-請見：`briefings/`
+以下是高層次的流程——把它想成一場接力賽，每位跑者必須正確交接棒，下一位才能出發：
 
-## Quick Start
+```
+你的晶片需求
+       ↓
+  [規格接收]  ← AI 輔助、人工審閱
+       ↓
+  [架構圖]  ← 自動生成 + 驗證 + 凍結
+       ↓
+  [EDA 執行]  ← Verilator → Yosys → OpenROAD → KLayout → Netgen ...
+       ↓
+  [證據與就緒性報告]  ← 每個結果都被記錄並檢查
+       ↓
+  [人工簽核關卡]  ← 最終決策由人類做
+       ↓
+  [Tapeout 套件]  ← 組裝 + 完整性驗證
+       ↓
+  [交廠]  ← 晶片送往工廠
+       ↓
+  [矽晶回饋]  ← 真實結果回流進系統
+```
 
-1. 先看 [RELEASE_INDEX.md](./RELEASE_INDEX.md) 找到目前生效 bundle。
-2. 選擇 variant：`solo_eval`、`team_project`、`enterprise_site`。
-3. 解壓前先閱讀 variant `README.md` 與 `deployment/docs/*`。
-4. 執行 `scripts/verify_release_bundle.sh <bundle_id>`。
+**核心理念：** 除非當前步驟有正式的、有紀錄的、機器可驗證的證明，否則不允許進入下一步。這個原則叫做 **No-Proof-No-Claim（無證據不聲稱）**。
 
-## Release Truth
+---
 
-- payload root: `releases/runtime-bundle-tw-*`
-- semantic pointers: `releases/version-pointers/*.json`
-- latest pointer: `releases/version-pointers/LATEST.json`
+## ✨ 為什麼選擇 ICAF？核心優勢
+
+### 1. 🛡️ 治理優先——不讓錯誤悄悄溜走
+每個操作都留下紀錄。每個決策都有對應的證據檔案。如果出了問題，你可以精確追查是在哪裡、什麼時候、為什麼出錯——就像晶片設計的「飛行記錄器」。
+
+### 2. 🤖 AI 輔助、人工治理
+ICAF 使用 AI 代理程式來協助重複性任務（例如規格生成、架構圖建構、工具執行），但**人類始終掌控關卡**。AI 幫你加速；人類幫你把關。
+
+### 3. 🔬 真實開源 EDA 工具整合
+ICAF 執行的是**真正的生產級開源 EDA 工具**，不是模擬或替代品：
+- **Verilator** — RTL 語法檢查與模擬
+- **Yosys** — 邏輯合成與等效性驗證
+- **OpenROAD** — 佈局佈線
+- **OpenSTA** — 時序分析
+- **KLayout** — 佈局 DRC 與 GDS
+- **Netgen** — LVS（佈局與電路圖對比）
+- 以及更多（靜態 IR 壓降、DFT 掃描、ESD 審查、IO 接墊環）
+
+### 4. 📊 操作員主控台——一目瞭然
+即時網頁儀表板顯示你整個晶片設計的狀態：哪些階段通過了、哪些需要注意、有哪些證據、有哪些決策待處理。不再需要四處翻找資料夾。
+
+### 5. 📦 彈性部署套件
+ICAF 提供三種規格，適合不同的團隊大小：
+- **`solo_eval`** — 個人本機評估
+- **`team_project`** — 小型團隊協作
+- **`enterprise_site`** — 組織規模部署，含完整治理機制
+
+### 6. 🔐 內建 IP 保護
+你的原始碼和專有工具鏈細節受到保護。ICAF 的發布模式將客戶執行期和內部開發原始碼分開管理。
+
+### 7. ♻️ 可重播與可稽核
+任何執行都可以確定性地重播。所有證據都有 checksum 保護。你可以向任何人——包括你的晶圓廠——證明做了什麼、什麼時候做的。
+
+---
+
+## 📡 目前能力 (v1.17.0)
+
+### ✅ 已實作並驗證
+
+**上游流程（規格 → 架構）**
+- AI 輔助的需求接收工作階段
+- 架構圖生成、驗證與凍結
+- 人工需求裁決，含正式簽核紀錄
+
+**EDA 執行鏈**
+- V1：Verilator 語法檢查
+- V2：Verilator 有界模擬
+- V3：CDC/RDC 結構分析
+- V3b：CDC signoff-lite（sby + z3）
+- V4：Yosys 等效性驗證（LEC）
+- H1：Yosys 合成
+- H2：OpenROAD 佈局佈線
+- H5：OpenSTA 時序分析
+- H4：KLayout DRC + GDS
+- H3：Netgen LVS
+- H9：靜態 IR 壓降分析
+- H10：動態 IR 壓降分析
+- H6：DFT 掃描證據通道
+- H7：ESD 審查證據通道
+- H8：IO 接墊環證據通道
+
+**治理與報告**
+- 就緒性關卡矩陣（已驗證晶片上 35 項全綠）
+- 機器可讀的證據清單，含 checksum 完整性
+- 簽核領域矩陣，含豁免/風險/責任人鏈
+- Tapeout 套件組裝與交廠紀錄
+- 矽晶回饋修復面板（v1.15）
+
+**操作員主控台**
+- 規格接收與架構啟動介面
+- EDA 執行結案詳情介面
+- 下游決策控制塔（證據就緒與人工決策分開顯示）
+- 知識資產中心
+- 套件就緒性面板
+- 簽核操作佇列
+- 矽晶回饋面板（v1.17.0 新增）
+- 主控台啟動關卡（v1.17.0 新增）
+
+**打包與發布**
+- 三種驗證套件：`solo_eval`、`team_project`、`enterprise_site`
+- 套件建置登記表，含歷史保護（v1.17.0 新增）
+- 機器可讀的建置索引與發布追蹤
+- IP 保護的編譯發布（客戶套件不含原始碼）
+
+### 📋 現行發布版
+
+| 版本 | Bundle ID | 發布日期 | 狀態 |
+|------|-----------|----------|------|
+| **v1.17.0** | `runtime-bundle-tw-20260529043609` | 2026-05-30 | ✅ **生效中** |
+| v1.6.0 | `runtime-bundle-tw-20260429140332` | 2026-04-29 | 歷史版本 |
+
+---
+
+## 🏁 快速開始
+
+### 第一步 — 選擇適合你的套件類型
+
+| 類型 | 適合誰？ |
+|------|---------|
+| `solo_eval` | 個別工程師在自己的機器上評估 ICAF |
+| `team_project` | 小型團隊一起在共同專案上使用 ICAF |
+| `enterprise_site` | 整個組織部署 ICAF，含企業級治理機制 |
+
+### 第二步 — 找到現行發布版
+
+查看 [RELEASE_INDEX.md](./RELEASE_INDEX.md) 找到目前生效的 bundle 及其確切檔案路徑。
+
+### 第三步 — 先讀文件再解壓縮
+
+每個套件包含解壓前文件：
+- `README.md` — 針對該類型的說明
+- `deployment/docs/*` — 安裝與操作指南
+
+**解壓縮前請先閱讀這些文件。** 它們告訴你需要什麼執行環境，以及第一步要做什麼。
+
+### 第四步 — 驗證套件完整性
+
+執行驗證腳本確認下載的套件沒有問題：
+
+```bash
+scripts/verify_release_bundle.sh <bundle_id>
+```
+
+### 第五步 — 安裝並開始執行
+
+依照套件內 `deployment/docs/` 的指示：
+1. 安裝執行期 bundle
+2. 執行健康檢查
+3. 開始你的第一次受治理晶片執行
+
+---
+
+## 📚 學習資源
+
+| 文件 | 內容 |
+|------|------|
+| [RELEASE_INDEX.md](./RELEASE_INDEX.md) | 所有發布版、bundle ID、checksum、狀態 |
+| [PACKAGE_VARIANTS.md](./PACKAGE_VARIANTS.md) | 三種套件類型的詳細比較 |
+| [briefings/](./briefings/) | 客戶閱讀包——背景知識與導覽 |
+| [docs/eda-toolchain-candidates-reference.md](./docs/eda-toolchain-candidates-reference.md) | 開源 EDA 工具參考資料 |
+| [SECURITY.md](./SECURITY.md) | 安全政策與漏洞通報 |
+| [SUPPORT.md](./SUPPORT.md) | 如何取得協助 |
+
+---
+
+## 🔒 發布完整性
+
+每個發布 bundle 包含：
+- **Checksum 檔案** — 驗證套件未被竄改
+- **發布清單** — 記錄 bundle 的內容與來源
+- **版本指標** — 機器可讀的語意版本對應
+
+最新指標：`releases/version-pointers/LATEST.json`
+所有指標：`releases/version-pointers/`
+
+---
+
+## 📬 需要協助？ / 回報問題
+
+在安裝環境、執行 ICAF 的過程中遇到困難嗎？或者發現了 Bug？還是你有任何好點子或建議？我們非常歡迎你告訴我們！
+
+**請直接在我們的 GitHub 儲存庫上開立 Issue！** 這是取得協助最快、最好的方法。
+
+* 💡 **給你的提示：** 請參考 [SUPPORT.zh-TW.md](./SUPPORT.zh-TW.md) 取得簡單好用的 Issue 範本與說明。**請務必附上你確切的作業系統環境（OS environment）**（例如 macOS 14 Sonoma、Ubuntu 22.04 等），因為許多晶片設計工具在不同的系統上運作方式會有所不同！
+* 🤖 **給你的本機 AI 助手（Local AI Agent）：** 如果你正在使用本機 AI 助手來操作 ICAF，你的助手也可以閱讀 [SUPPORT.zh-TW.md](./SUPPORT.zh-TW.md)，了解在遇到問題時如何自動搜尋答案，並向我們回報問題。
+
+其他相關主題：
+- 安全問題：請見 [SECURITY.md](./SECURITY.md)
+- 授權條款：請見 [LICENSE.zh-TW.md](./LICENSE.zh-TW.md)

@@ -1,7 +1,7 @@
-# License Notice
+# 授權聲明
 
-License terms are governed by commercial contract and release entitlement.
+本套件的授權條款由商業合約及發布授權資格所管理。
 
-- This repository is for customer release distribution metadata and artifacts.
-- No implicit source-code redistribution rights are granted.
-- Source disclosure (if any) must follow explicit escrow/license path.
+- 本儲存庫僅供客戶發布版的散布後設資料與產出物使用。
+- 未明確授予任何原始碼再散布的隱含權利。
+- 原始碼揭露（如有）必須依照明確的原始碼託管（escrow）或授權路徑進行。

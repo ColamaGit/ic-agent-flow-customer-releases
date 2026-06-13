@@ -1,21 +1,23 @@
-# i18n Policy (EN / zh-TW)
+# 多語系政策（EN / zh-TW）
 
-## Scope
-All customer-facing `*.md` files must support EN and zh-TW.
+[EN](./i18n-policy.md) | [zh-TW](./i18n-policy.zh-TW.md)
 
-## Naming
-- English: `xxx.md`
-- zh-TW: `xxx.zh-TW.md`
+## 適用範圍
+所有面向客戶的 `*.md` 檔案必須同時支援 EN 與 zh-TW。
 
-## Canonical Rule
-- EN may remain canonical initially.
-- zh-TW can start as fallback and later be upgraded to full translation.
+## 命名規則
+- 英文版：`xxx.md`
+- zh-TW 版：`xxx.zh-TW.md`
 
-## Quality Levels
-- `fallback_ready`: zh-TW guide + link to EN
-- `fully_translated`: full standalone zh-TW content
+## 基本規則
+- 英文版可作為初始正式版本。
+- zh-TW 版可先作為後備版本，之後升級為完整翻譯。
 
-## Operational Rule
-1. Add `*.zh-TW.md` whenever adding `*.md`.
-2. Check EN/zh-TW pair coverage before release.
-3. Track and fix EN/zh-TW drift in release notes.
+## 品質等級
+- `fallback_ready`：zh-TW 導覽頁面 + 連結至英文版
+- `fully_translated`：完整獨立的 zh-TW 內容
+
+## 操作規則
+1. 每新增 `*.md` 時同步新增對應的 `*.zh-TW.md`。
+2. 發布前檢查 EN/zh-TW 配對完整性。
+3. 在發布說明中追蹤並修正 EN/zh-TW 內容漂移。

@@ -1,48 +1,120 @@
-# Repository Guidelines
+# Repository Guidelines — ic-agent-flow Customer Releases
 
-## Project Structure & Module Organization
-This repository is a customer-release registry, not a source-code workspace. At present it contains planning documentation (for example, `ic-agent-flow-customer-releases repo plan.md`) and will evolve into a release-oriented layout.
+## What This Repository Is
 
-Use this target structure when adding content:
-- `releases/<version>/`: release manifests, checksums, signatures, SBOM, and per-variant package metadata.
-- `docs/`: install, activation, security, and operations guides.
-- `profiles/`: deployment/profile templates (`solo_eval`, `team_project`, `enterprise_site`).
-- `schemas/`: public contract and runtime schema definitions.
-- `.github/workflows/`: validation checks for manifests, schema, and boundary rules.
+This repository is the **customer-facing release registry** for `ic-agent-flow (ICAF)`.
+It is **not** the source development repository.
 
-## Build, Test, and Development Commands
-There is no build system yet. Use lightweight verification commands while bootstrapping:
-- `ls -la`: quick repository sanity check.
-- `rg --files`: list tracked project files quickly.
-- `git status`: review pending changes before commit.
-- `markdownlint AGENTS.md` (if installed): validate Markdown style.
+**This repository contains:**
+- Customer release bundles (runtime packages for each variant)
+- Release manifests, checksums, and integrity records
+- Public operational documentation
+- Deployment profiles and templates
+- Activation checklists and smoke scenarios
+- Public contract schemas
+- Trust and signature verification records
 
-As workflows are added, expose canonical commands via `Makefile` or `package.json` scripts (for example `make verify` or `npm run verify`).
+**This repository must NOT contain:**
+- Internal source code (`workspace/`, `tests/`, `.env`, internal scripts)
+- Internal governance documents, PRDs, or closeout reasoning
+- Prompt, context, or AI agent internals
+- Customer or vendor design IP
+- Any credentials or secrets
+
+---
+
+## Repository Structure
+
+```
+ic-agent-flow-customer-releases/
+├── releases/                     # Release payloads and version pointers
+│   ├── runtime-bundle-tw-*/      # Bundle payload roots (one per release)
+│   ├── version-pointers/         # LATEST.json + semantic version pointers
+│   └── CHANGELOG.md              # Release changelog
+├── docs/                         # Customer operation documentation
+├── briefings/                    # Customer reading pack and orientation
+├── activation-packs/             # Per-variant activation checklists and smoke refs
+│   ├── solo_eval/
+│   ├── team_project/
+│   └── enterprise_site/
+├── profiles/                     # Deployment profile templates
+│   ├── solo_eval/
+│   ├── team_project/
+│   └── enterprise_site/
+├── schemas/                      # Public contract and runtime schema definitions
+│   ├── customer_runtime/
+│   └── public_contract/
+├── scripts/                      # Verification and utility scripts
+├── trust/                        # Public keys and signature verification docs
+├── validation/                   # Release validation summaries
+├── README.md / README.zh-TW.md
+├── RELEASE_INDEX.md / RELEASE_INDEX.zh-TW.md
+├── PACKAGE_VARIANTS.md / PACKAGE_VARIANTS.zh-TW.md
+├── SECURITY.md / SECURITY.zh-TW.md
+├── SUPPORT.md / SUPPORT.zh-TW.md
+└── LICENSE.md / LICENSE.zh-TW.md
+```
+
+---
+
+## Key Commands
+
+```bash
+# Verify the active release bundle
+scripts/verify_release_bundle.sh <bundle_id>
+
+# Example:
+scripts/verify_release_bundle.sh runtime-bundle-tw-20260529043609
+
+# List all files in a bundle
+ls releases/runtime-bundle-tw-20260529043609/
+
+# Check latest version pointer
+cat releases/version-pointers/LATEST.json
+```
+
+---
 
 ## Coding Style & Naming Conventions
-- Prefer Markdown and JSON for repository artifacts.
-- Use 2-space indentation for JSON/YAML; keep Markdown concise and sectioned.
-- Use lowercase kebab-case for files/directories (`release-manifest.json`, `source-exclusion-report.json`).
-- Keep variant names canonical: `solo_eval`, `team_project`, `enterprise_site`.
 
-## Testing Guidelines
-Treat validation as contract testing:
-- Verify checksum/signature metadata consistency per release.
-- Validate JSON artifacts against schemas before publishing.
-- Ensure no internal-only content is included in customer-facing release paths.
+- All documentation files: Markdown (`.md`)
+- All structured data: JSON (`.json`) or YAML (`.yaml`)
+- JSON/YAML: 2-space indentation
+- File and directory names: lowercase kebab-case (`release-manifest.json`, `eda-toolchain.yaml`)
+- Canonical variant names (do not rename): `solo_eval`, `team_project`, `enterprise_site`
+- Bundle ID format: `runtime-bundle-tw-YYYYMMDDHHMMSS` (Asia/Taipei UTC+8)
 
-Name validation outputs clearly, e.g. `validation/<version>/<variant>/validation-summary.md`.
+---
+
+## i18n Policy
+
+All customer-facing `*.md` files must have both an English (`*.md`) and Traditional Chinese (`*.zh-TW.md`) version.
+
+- Never leave a `*.zh-TW.md` file with English-only content.
+- When updating an English file, update the zh-TW counterpart in the same commit.
+- See `docs/i18n-policy.md` for the full policy.
+
+---
+
+## Release Integrity Rules
+
+- **Never manually edit** bundle contents inside `releases/runtime-bundle-tw-*/`.
+- **Never add** source code, internal docs, secrets, or IP to this repository.
+- Every new bundle must be verified with `scripts/verify_release_bundle.sh` before merging.
+- Every release must update: `releases/version-pointers/LATEST.json`, the version pointer file, and `RELEASE_INDEX.md`.
+
+---
 
 ## Commit & Pull Request Guidelines
-This repository has no commit history yet; adopt Conventional Commits now:
-- `docs: add v1.6.0 release index`
-- `chore: add schema validation workflow`
 
-PRs should include:
-- Clear scope and affected paths.
-- Linked issue or release ticket.
-- Evidence of verification (command list/output summary).
-- Notes on customer-facing impact and any security/trust artifacts updated.
+Use imperative commit subjects with scope prefix:
+- `release(v1.17.0): add runtime-bundle-tw-20260529043609`
+- `docs: update getting-started guide`
+- `fix: correct zh-TW translation in briefings/01`
+- `chore: update RELEASE_INDEX.md for v1.17.0`
 
-## Security & Release Boundary Rules
-Do not commit source code, internal governance docs, secrets, or private validator logic. Customer releases must expose only installable packages, public manifests, trust metadata, and operational guidance.
+PRs must include:
+- Affected paths and scope
+- Verification command output (e.g., `verify_release_bundle.sh` result)
+- Confirmation that both EN and zh-TW files are updated
+- Notes on customer-facing impact
