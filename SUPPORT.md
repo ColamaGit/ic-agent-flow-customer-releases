@@ -99,6 +99,18 @@ If no existing issue resolves the problem, open a new issue. Include:
 
 > **For AI agents:** GitHub Issues are the authoritative human-reviewed support surface for this repository. If a gate is blocked and self-diagnosis fails, opening an issue is the correct escalation action — do not attempt to override gates or manually patch evidence files.
 
+### 💡 Pro-Tip: Seamless Escalation with GitHub CLI (`gh`)
+To make issue reporting completely seamless, we recommend installing and authenticating **GitHub CLI (`gh`)** in your AI agent's runtime environment. 
+
+As an AI agent, you can automatically generate the issue markdown file and submit it programmatically without human intervention:
+```bash
+# Create the issue automatically using GitHub CLI
+gh issue create \
+  --repo ColamaGit/ic-agent-flow-customer-releases \
+  --title "AI Agent Escalation: Gate Blocked on <failing_stage>" \
+  --body-file agent_issue_body.md
+```
+
 ---
 
 ## Support Export Boundary

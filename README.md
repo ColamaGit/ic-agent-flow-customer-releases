@@ -228,7 +228,7 @@ Have you run into a problem while setting up your environment, running ICAF, or 
 **Please open an issue on our GitHub repository!** This is the fastest and best way to get help.
 
 * 💡 **For You:** Check out [SUPPORT.md](./SUPPORT.md) for our easy-to-use issue template. **Remember to include your exact Operating System (OS) environment** (like macOS 14 Sonoma, Ubuntu 22.04, etc.), as many chip design tools behave differently on different systems!
-* 🤖 **For Your Local AI Agent:** If you are using a local AI agent to run ICAF, your agent can read [SUPPORT.md](./SUPPORT.md) to learn how to search for answers automatically and report issues to us when things go wrong.
+* 🤖 **For Your Local AI Agent:** If you are using a local AI agent to run ICAF, your agent can read [SUPPORT.md](./SUPPORT.md) to learn how to search for answers automatically. **We highly recommend installing GitHub CLI (`gh`)** in your agent's environment so it can automatically submit support requests and post issues to us programmatically when things go wrong.
 
 For other topics:
 - Security issues: see [SECURITY.md](./SECURITY.md)

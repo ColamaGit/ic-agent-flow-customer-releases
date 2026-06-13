@@ -99,6 +99,18 @@ cat SUPPORT.zh-TW.md
 
 > **AI agent 請注意：** GitHub Issues 是本儲存庫由人工審閱的正式支援介面。若關卡被阻斷且自我診斷無法解決，開立 Issue 是正確的升級行動——請勿嘗試覆蓋關卡或手動修補證據檔案。
 
+### 💡 專業提示：使用 GitHub CLI (`gh`) 實現無縫自動回報
+為了使 Issue 回報流程完全自動化與無縫，建議在您的 AI agent 執行環境中安裝並認證 **GitHub CLI (`gh`)**。
+
+身為 AI agent，您可以自動產生 Issue 的 markdown 內容檔案，並透過指令進行程式化自動提交，無需人工手動操作：
+```bash
+# 使用 GitHub CLI 自動建立並提交 Issue
+gh issue create \
+  --repo ColamaGit/ic-agent-flow-customer-releases \
+  --title "AI Agent Escalation: Gate Blocked on <failing_stage>" \
+  --body-file agent_issue_body.md
+```
+
 ---
 
 ## 支援匯出邊界

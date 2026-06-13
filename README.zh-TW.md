@@ -228,7 +228,7 @@ scripts/verify_release_bundle.sh <bundle_id>
 **請直接在我們的 GitHub 儲存庫上開立 Issue！** 這是取得協助最快、最好的方法。
 
 * 💡 **給你的提示：** 請參考 [SUPPORT.zh-TW.md](./SUPPORT.zh-TW.md) 取得簡單好用的 Issue 範本與說明。**請務必附上你確切的作業系統環境（OS environment）**（例如 macOS 14 Sonoma、Ubuntu 22.04 等），因為許多晶片設計工具在不同的系統上運作方式會有所不同！
-* 🤖 **給你的本機 AI 助手（Local AI Agent）：** 如果你正在使用本機 AI 助手來操作 ICAF，你的助手也可以閱讀 [SUPPORT.zh-TW.md](./SUPPORT.zh-TW.md)，了解在遇到問題時如何自動搜尋答案，並向我們回報問題。
+* 🤖 **給你的本機 AI 助手（Local AI Agent）：** 如果你正在使用本機 AI 助手來操作 ICAF，你的助手也可以閱讀 [SUPPORT.zh-TW.md](./SUPPORT.zh-TW.md)，了解在遇到問題時如何自動搜尋答案。**我們強烈建議在助手的環境中安裝 GitHub CLI (`gh`)**，這樣一來，當助手遇到問題時，就能在無需人工干預的情況下，自動幫你建立並向我們提交 Issue。
 
 其他相關主題：
 - 安全問題：請見 [SECURITY.md](./SECURITY.md)
